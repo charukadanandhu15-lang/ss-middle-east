@@ -1,1 +1,759 @@
-<!doctype html><html><head><meta name="viewport" content="width=device-width,initial-scale=1"><title>Electrical & Plumbing</title><link rel="stylesheet" href="style.css"></head><body><section class="cta" style="min-height:100vh"><p>S&S MIDDLE EAST</p><h2>Electrical & Plumbing</h2><p style="color:#ccd3da;max-width:600px">Dedicated service page — next we can build this with project photos, service details and enquiry options.</p><a href="index.html">← Back Home</a></section></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>MEP Works | S&S Middle East</title>
+
+<style>
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  background:#f4f2ed;
+  color:#102333;
+}
+
+/* HERO */
+
+.hero{
+  min-height:86vh;
+  position:relative;
+  display:flex;
+  align-items:flex-end;
+  padding:38px 26px 52px;
+  color:#fff;
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(7,20,31,.12),
+      rgba(7,20,31,.90)
+    ),
+    url("https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&w=900&q=88");
+
+  background-size:cover;
+  background-position:center;
+}
+
+.back{
+  position:absolute;
+  top:28px;
+  left:25px;
+  color:#fff;
+  text-decoration:none;
+  font-size:14px;
+  letter-spacing:1px;
+}
+
+.hero-content{
+  max-width:600px;
+}
+
+.number{
+  color:#f47721;
+  font-size:13px;
+  font-weight:bold;
+  letter-spacing:2px;
+  margin-bottom:16px;
+}
+
+.hero h1{
+  font-size:50px;
+  line-height:.97;
+  letter-spacing:-2px;
+  margin-bottom:21px;
+}
+
+.hero p{
+  color:#e4e8ea;
+  font-size:18px;
+  line-height:1.6;
+}
+
+/* INTRO */
+
+.intro{
+  padding:75px 26px 60px;
+}
+
+.label{
+  color:#c96827;
+  font-size:12px;
+  font-weight:bold;
+  letter-spacing:4px;
+  margin-bottom:23px;
+}
+
+.intro h2{
+  font-size:41px;
+  line-height:1.07;
+  letter-spacing:-1.4px;
+  margin-bottom:25px;
+}
+
+.intro p{
+  color:#68727a;
+  font-size:17px;
+  line-height:1.75;
+}
+
+/* SERVICES */
+
+.services{
+  padding:5px 26px 75px;
+}
+
+.service{
+  padding:29px 0;
+  border-top:1px solid #d6d3cd;
+}
+
+.service:last-child{
+  border-bottom:1px solid #d6d3cd;
+}
+
+.service-number{
+  color:#d56e28;
+  font-size:11px;
+  font-weight:bold;
+  letter-spacing:2px;
+}
+
+.service h3{
+  font-size:26px;
+  font-weight:500;
+  margin:9px 0 10px;
+}
+
+.service p{
+  color:#717a81;
+  font-size:15px;
+  line-height:1.6;
+}
+
+/* APPLICATIONS */
+
+.applications{
+  background:#102333;
+  color:#fff;
+  padding:70px 26px;
+}
+
+.applications .label{
+  color:#f47721;
+}
+
+.applications h2{
+  font-size:39px;
+  line-height:1.08;
+  margin-bottom:38px;
+}
+
+.application{
+  padding:25px 0;
+  border-top:1px solid rgba(255,255,255,.16);
+}
+
+.application span{
+  color:#f47721;
+  font-size:11px;
+  letter-spacing:2px;
+}
+
+.application h3{
+  font-size:22px;
+  margin:8px 0;
+}
+
+.application p{
+  color:#aeb8bf;
+  font-size:15px;
+  line-height:1.6;
+}
+
+/* PROCESS */
+
+.process{
+  padding:75px 26px;
+}
+
+.process h2{
+  font-size:40px;
+  line-height:1.07;
+  margin-bottom:40px;
+}
+
+.step{
+  display:flex;
+  gap:18px;
+  padding:25px 0;
+  border-top:1px solid #d6d3cd;
+}
+
+.step-number{
+  color:#f47721;
+  font-size:12px;
+  min-width:25px;
+  padding-top:4px;
+}
+
+.step h3{
+  font-size:23px;
+  margin-bottom:7px;
+}
+
+.step p{
+  color:#717a81;
+  font-size:15px;
+  line-height:1.55;
+}
+
+/* CTA */
+
+.cta{
+  background:#102333;
+  color:#fff;
+  padding:75px 26px;
+}
+
+.cta .label{
+  color:#f47721;
+}
+
+.cta h2{
+  font-size:42px;
+  line-height:1.05;
+  margin-bottom:20px;
+}
+
+.cta p{
+  color:#b1bbc1;
+  font-size:17px;
+  line-height:1.65;
+  margin-bottom:32px;
+}
+
+.buttons{
+  display:flex;
+  gap:10px;
+}
+
+.btn{
+  display:inline-block;
+  padding:17px 20px;
+  text-decoration:none;
+  font-size:14px;
+  font-weight:bold;
+}
+
+.primary{
+  background:#f47721;
+  color:#fff;
+}
+
+.secondary{
+  border:1px solid rgba(255,255,255,.55);
+  color:#fff;
+}
+
+/* FOOTER */
+
+.footer{
+  background:#0b1923;
+  color:#fff;
+  padding:36px 26px;
+}
+
+.footer strong{
+  display:block;
+  font-size:20px;
+  margin-bottom:9px;
+}
+
+.footer p{
+  color:#98a6ae;
+  font-size:14px;
+  line-height:1.65;
+}
+
+.footer a{
+  color:#98a6ae;
+  text-decoration:none;
+}
+
+/* MOBILE */
+
+@media(max-width:380px){
+
+  .hero h1{
+    font-size:43px;
+  }
+
+  .intro h2,
+  .process h2{
+    font-size:36px;
+  }
+
+  .applications h2,
+  .cta h2{
+    font-size:36px;
+  }
+
+  .buttons{
+    flex-direction:column;
+  }
+
+  .btn{
+    text-align:center;
+  }
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+<a class="back" href="index.html">← BACK</a>
+
+<div class="hero-content">
+
+<div class="number">
+05 / MEP WORKS
+</div>
+
+<h1>
+Essential systems.<br>
+Properly done.
+</h1>
+
+<p>
+Electrical and plumbing works supporting
+interior fit-outs, renovations and everyday
+property requirements.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- INTRO -->
+
+<section class="intro">
+
+<div class="label">
+MEP SERVICES
+</div>
+
+<h2>
+The essential work<br>
+behind every space.
+</h2>
+
+<p>
+S&S Middle East provides practical electrical
+and plumbing solutions for homes, offices,
+shops, restaurants, clinics and other
+commercial spaces.
+<br><br>
+Whether it is a small modification, repair,
+new installation or supporting work for an
+interior fit-out, our team can handle the
+required MEP works.
+</p>
+
+</section>
+
+
+<!-- ALL MEP SERVICES -->
+
+<section class="services">
+
+
+<div class="service">
+
+<span class="service-number">01 / ELECTRICAL</span>
+
+<h3>Electrical Works</h3>
+
+<p>
+Electrical installation, modification and repair
+works for residential and commercial interiors.
+</p>
+
+</div>
+
+
+<div class="service">
+
+<span class="service-number">02 / LIGHTING</span>
+
+<h3>Lighting Installation</h3>
+
+<p>
+Installation and modification of interior lighting,
+ceiling lights, spotlights and other lighting points.
+</p>
+
+</div>
+
+
+<div class="service">
+
+<span class="service-number">03 / POWER</span>
+
+<h3>Power Points & Sockets</h3>
+
+<p>
+New power points, socket relocation and electrical
+point modifications based on your interior layout.
+</p>
+
+</div>
+
+
+<div class="service">
+
+<span class="service-number">04 / DB WORKS</span>
+
+<h3>Electrical Distribution Works</h3>
+
+<p>
+Supporting electrical distribution and connection
+works required for interior modifications and fit-outs.
+</p>
+
+</div>
+
+
+<div class="service">
+
+<span class="service-number">05 / PLUMBING</span>
+
+<h3>Plumbing Works</h3>
+
+<p>
+Plumbing installation, modifications and repair
+works for kitchens, washrooms and commercial spaces.
+</p>
+
+</div>
+
+
+<div class="service">
+
+<span class="service-number">06 / WATER</span>
+
+<h3>Water Supply Lines</h3>
+
+<p>
+Installation and modification of water supply
+connections according to the space requirement.
+</p>
+
+</div>
+
+
+<div class="service">
+
+<span class="service-number">07 / DRAINAGE</span>
+
+<h3>Drainage Works</h3>
+
+<p>
+Drainage connection, relocation and modification
+works for renovation and fit-out projects.
+</p>
+
+</div>
+
+
+<div class="service">
+
+<span class="service-number">08 / KITCHEN</span>
+
+<h3>Kitchen MEP Works</h3>
+
+<p>
+Electrical and plumbing modifications required
+for residential and commercial kitchen spaces.
+</p>
+
+</div>
+
+
+<div class="service">
+
+<span class="service-number">09 / WASHROOM</span>
+
+<h3>Washroom MEP Works</h3>
+
+<p>
+Supporting electrical and plumbing works for
+washroom renovation, modification and upgrades.
+</p>
+
+</div>
+
+
+<div class="service">
+
+<span class="service-number">10 / MODIFICATIONS</span>
+
+<h3>MEP Modifications</h3>
+
+<p>
+Changes to existing electrical and plumbing
+services during interior renovation and fit-out works.
+</p>
+
+</div>
+
+
+<div class="service">
+
+<span class="service-number">11 / REPAIR</span>
+
+<h3>Electrical & Plumbing Repairs</h3>
+
+<p>
+Practical repair solutions for common electrical
+and plumbing problems in existing spaces.
+</p>
+
+</div>
+
+
+</section>
+
+
+<!-- WHERE WE WORK -->
+
+<section class="applications">
+
+<div class="label">
+WHERE WE WORK
+</div>
+
+<h2>
+MEP support for<br>
+different spaces.
+</h2>
+
+
+<div class="application">
+
+<span>01 / HOME</span>
+
+<h3>Residential Spaces</h3>
+
+<p>
+Electrical and plumbing modifications for
+apartments, villas and residential interiors.
+</p>
+
+</div>
+
+
+<div class="application">
+
+<span>02 / OFFICE</span>
+
+<h3>Offices & Workspaces</h3>
+
+<p>
+Power, lighting and plumbing modifications
+supporting office fit-out requirements.
+</p>
+
+</div>
+
+
+<div class="application">
+
+<span>03 / RETAIL</span>
+
+<h3>Shops & Commercial Units</h3>
+
+<p>
+MEP works for new shops, renovations and
+commercial interior modifications.
+</p>
+
+</div>
+
+
+<div class="application">
+
+<span>04 / RESTAURANT</span>
+
+<h3>Restaurants & Kitchens</h3>
+
+<p>
+Electrical and plumbing works supporting
+restaurant and commercial kitchen fit-outs.
+</p>
+
+</div>
+
+
+<div class="application">
+
+<span>05 / CLINIC</span>
+
+<h3>Medical Clinics</h3>
+
+<p>
+MEP modifications supporting clinic interiors,
+consultation rooms and service areas.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- PROCESS -->
+
+<section class="process">
+
+<div class="label">
+HOW WE WORK
+</div>
+
+<h2>
+Simple process.<br>
+Practical solution.
+</h2>
+
+
+<div class="step">
+
+<div class="step-number">01</div>
+
+<div>
+
+<h3>Understand</h3>
+
+<p>
+We understand your space and the electrical
+or plumbing work required.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="step">
+
+<div class="step-number">02</div>
+
+<div>
+
+<h3>Check & Plan</h3>
+
+<p>
+Existing points and services are reviewed
+before planning the required modification.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="step">
+
+<div class="step-number">03</div>
+
+<div>
+
+<h3>Execute</h3>
+
+<p>
+The required MEP works are completed with
+attention to functionality and finishing.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CTA -->
+
+<section class="cta">
+
+<div class="label">
+NEED MEP WORK?
+</div>
+
+<h2>
+Tell us what<br>
+needs to be done.
+</h2>
+
+<p>
+From a small electrical or plumbing modification
+to supporting MEP works for your complete interior
+fit-out, contact S&S Middle East.
+</p>
+
+<div class="buttons">
+
+<a
+class="btn primary"
+href="https://wa.me/971552930619">
+WhatsApp Us
+</a>
+
+<a
+class="btn secondary"
+href="tel:+971552930619">
+Call Us
+</a>
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+<strong>
+S&S Middle East
+</strong>
+
+<p>
+Technical Services LLC<br>
+DIP - 1, Dubai - UAE<br>
+<a href="tel:+971552930619">
++971 55 293 0619
+</a><br>
+<a href="mailto:ssmiddleeastllc@gmail.com">
+ssmiddleeastllc@gmail.com
+</a>
+</p>
+
+</footer>
+
+
+</body>
+</html>
