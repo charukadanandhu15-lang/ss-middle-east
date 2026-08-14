@@ -1,1 +1,422 @@
-<!doctype html><html><head><meta name="viewport" content="width=device-width,initial-scale=1"><title>Interior Fit-Out</title><link rel="stylesheet" href="style.css"></head><body><section class="cta" style="min-height:100vh"><p>S&S MIDDLE EAST</p><h2>Interior Fit-Out</h2><p style="color:#ccd3da;max-width:600px">Dedicated service page — next we can build this with project photos, service details and enquiry options.</p><a href="index.html">← Back Home</a></section></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Interior Fit-Out | S&S Middle East</title>
+
+<style>
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  background:#f4f2ed;
+  color:#102333;
+}
+
+.hero{
+  min-height:88vh;
+  position:relative;
+  display:flex;
+  align-items:flex-end;
+  padding:38px 28px 55px;
+  color:#fff;
+
+  /* Temporary image - we can replace this later */
+  background:
+    linear-gradient(to bottom,
+      rgba(7,20,31,.18),
+      rgba(7,20,31,.82)
+    ),
+    url("https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1200&q=85");
+
+  background-size:cover;
+  background-position:center;
+}
+
+.back{
+  position:absolute;
+  top:28px;
+  left:25px;
+  color:white;
+  text-decoration:none;
+  font-size:14px;
+  letter-spacing:1px;
+}
+
+.hero-content{
+  max-width:600px;
+}
+
+.number{
+  color:#f47721;
+  font-weight:bold;
+  letter-spacing:2px;
+  margin-bottom:15px;
+}
+
+.hero h1{
+  font-size:52px;
+  line-height:.95;
+  letter-spacing:-2px;
+  margin-bottom:22px;
+}
+
+.hero p{
+  font-size:19px;
+  line-height:1.55;
+  color:#e7e7e7;
+  max-width:520px;
+}
+
+.intro{
+  padding:75px 28px 60px;
+}
+
+.label{
+  color:#c96827;
+  font-size:13px;
+  letter-spacing:4px;
+  font-weight:bold;
+  margin-bottom:24px;
+}
+
+.intro h2{
+  font-size:42px;
+  line-height:1.08;
+  letter-spacing:-1.5px;
+  margin-bottom:25px;
+}
+
+.intro p{
+  color:#69727a;
+  font-size:18px;
+  line-height:1.7;
+}
+
+.services{
+  padding:10px 28px 70px;
+}
+
+.service{
+  padding:27px 0;
+  border-top:1px solid #d8d8d4;
+}
+
+.service:last-child{
+  border-bottom:1px solid #d8d8d4;
+}
+
+.service span{
+  color:#d56e28;
+  font-size:12px;
+  letter-spacing:2px;
+}
+
+.service h3{
+  margin-top:8px;
+  font-size:26px;
+  font-weight:500;
+}
+
+.process{
+  background:#102333;
+  color:#fff;
+  padding:70px 28px;
+}
+
+.process .label{
+  color:#f47721;
+}
+
+.process h2{
+  font-size:40px;
+  line-height:1.05;
+  margin-bottom:45px;
+}
+
+.step{
+  display:flex;
+  gap:20px;
+  padding:25px 0;
+  border-top:1px solid rgba(255,255,255,.18);
+}
+
+.step-number{
+  color:#f47721;
+  font-size:13px;
+  padding-top:5px;
+}
+
+.step h3{
+  font-size:24px;
+  margin-bottom:7px;
+}
+
+.step p{
+  color:#aeb8bf;
+  line-height:1.5;
+}
+
+.cta{
+  background:#f4f2ed;
+  padding:75px 28px;
+}
+
+.cta h2{
+  font-size:43px;
+  line-height:1.05;
+  margin-bottom:20px;
+}
+
+.cta p{
+  color:#68727a;
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:32px;
+}
+
+.buttons{
+  display:flex;
+  gap:12px;
+}
+
+.btn{
+  display:inline-block;
+  padding:17px 22px;
+  text-decoration:none;
+  font-weight:bold;
+  font-size:15px;
+}
+
+.primary{
+  background:#f47721;
+  color:white;
+}
+
+.secondary{
+  border:1px solid #102333;
+  color:#102333;
+}
+
+.footer{
+  background:#0d1d29;
+  color:#fff;
+  padding:35px 28px;
+}
+
+.footer strong{
+  display:block;
+  font-size:20px;
+  margin-bottom:8px;
+}
+
+.footer p{
+  color:#9eabb3;
+  font-size:14px;
+  line-height:1.6;
+}
+
+@media(max-width:380px){
+
+  .hero h1{
+    font-size:45px;
+  }
+
+  .intro h2,
+  .cta h2{
+    font-size:37px;
+  }
+
+  .buttons{
+    flex-direction:column;
+  }
+
+  .btn{
+    text-align:center;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+
+<a class="back" href="index.html">← BACK</a>
+
+<div class="hero-content">
+
+<div class="number">01 / INTERIOR FIT-OUT</div>
+
+<h1>
+Spaces made<br>
+to work better.
+</h1>
+
+<p>
+Practical interior fit-out and renovation solutions
+for homes, offices and commercial spaces.
+</p>
+
+</div>
+</section>
+
+
+<section class="intro">
+
+<div class="label">WHAT WE DO</div>
+
+<h2>
+From small changes<br>
+to complete fit-outs.
+</h2>
+
+<p>
+Whether it is a room upgrade, office modification,
+shop renovation or a complete interior fit-out,
+S&S Middle East delivers practical solutions
+with professional finishing and attention to detail.
+</p>
+
+</section>
+
+
+<section class="services">
+
+<div class="service">
+<span>01</span>
+<h3>Partitions & Ceilings</h3>
+</div>
+
+<div class="service">
+<span>02</span>
+<h3>Flooring Works</h3>
+</div>
+
+<div class="service">
+<span>03</span>
+<h3>Painting & Finishing</h3>
+</div>
+
+<div class="service">
+<span>04</span>
+<h3>Gypsum & Glass Works</h3>
+</div>
+
+<div class="service">
+<span>05</span>
+<h3>Joinery & Carpentry</h3>
+</div>
+
+<div class="service">
+<span>06</span>
+<h3>Interior Modifications</h3>
+</div>
+
+</section>
+
+
+<section class="process">
+
+<div class="label">HOW WE WORK</div>
+
+<h2>
+Simple process.<br>
+Proper execution.
+</h2>
+
+<div class="step">
+
+<div class="step-number">01</div>
+
+<div>
+<h3>Understand</h3>
+<p>
+Tell us what needs to be changed, repaired or created.
+</p>
+</div>
+
+</div>
+
+
+<div class="step">
+
+<div class="step-number">02</div>
+
+<div>
+<h3>Plan</h3>
+<p>
+We review the space and plan the right solution for the work.
+</p>
+</div>
+
+</div>
+
+
+<div class="step">
+
+<div class="step-number">03</div>
+
+<div>
+<h3>Execute</h3>
+<p>
+Our team completes the work with attention to quality and finish.
+</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section class="cta">
+
+<div class="label">START YOUR PROJECT</div>
+
+<h2>
+Have a space<br>
+that needs work?
+</h2>
+
+<p>
+Tell us what you need. From small interior modifications
+to complete fit-out works, our team is ready to help.
+</p>
+
+<div class="buttons">
+
+<a class="btn primary"
+href="https://wa.me/971552930619">
+WhatsApp Us
+</a>
+
+<a class="btn secondary"
+href="tel:+971552930619">
+Call Us
+</a>
+
+</div>
+
+</section>
+
+
+<footer class="footer">
+
+<strong>S&S Middle East</strong>
+
+<p>
+Technical Services LLC<br>
+DIP - 1, Dubai - UAE<br>
++971 55 293 0619
+</p>
+
+</footer>
+
+</body>
+</html>
