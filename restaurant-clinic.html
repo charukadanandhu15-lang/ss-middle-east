@@ -1,1 +1,718 @@
-<!doctype html><html><head><meta name="viewport" content="width=device-width,initial-scale=1"><title>Restaurant & Clinic Works</title><link rel="stylesheet" href="style.css"></head><body><section class="cta" style="min-height:100vh"><p>S&S MIDDLE EAST</p><h2>Restaurant & Clinic Works</h2><p style="color:#ccd3da;max-width:600px">Dedicated service page — next we can build this with project photos, service details and enquiry options.</p><a href="index.html">← Back Home</a></section></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Restaurant & Clinic Works | S&S Middle East</title>
+
+<style>
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  background:#f4f2ed;
+  color:#102333;
+}
+
+/* HERO */
+
+.hero{
+  min-height:82vh;
+  position:relative;
+  display:flex;
+  align-items:flex-end;
+  padding:38px 25px 50px;
+  color:#fff;
+
+  background:
+    linear-gradient(to bottom,
+      rgba(7,20,31,.15),
+      rgba(7,20,31,.88)
+    ),
+    url("https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=900&q=88");
+
+  background-size:cover;
+  background-position:center;
+}
+
+.back{
+  position:absolute;
+  top:28px;
+  left:25px;
+  color:#fff;
+  text-decoration:none;
+  font-size:14px;
+  letter-spacing:1px;
+}
+
+.number{
+  color:#f47721;
+  font-weight:bold;
+  letter-spacing:2px;
+  margin-bottom:15px;
+}
+
+.hero h1{
+  font-size:49px;
+  line-height:.97;
+  letter-spacing:-2px;
+  margin-bottom:22px;
+}
+
+.hero p{
+  font-size:18px;
+  line-height:1.6;
+  color:#e7e7e7;
+  max-width:520px;
+}
+
+/* INTRO */
+
+.intro{
+  padding:75px 25px 55px;
+}
+
+.label{
+  color:#c96827;
+  font-size:12px;
+  letter-spacing:4px;
+  font-weight:bold;
+  margin-bottom:22px;
+}
+
+.intro h2{
+  font-size:41px;
+  line-height:1.06;
+  letter-spacing:-1.5px;
+  margin-bottom:24px;
+}
+
+.intro p{
+  color:#69727a;
+  font-size:17px;
+  line-height:1.75;
+}
+
+/* SECTION */
+
+.category{
+  padding:25px 18px 70px;
+}
+
+.category-head{
+  padding:0 7px 28px;
+}
+
+.category-head span{
+  color:#f47721;
+  font-size:12px;
+  font-weight:bold;
+  letter-spacing:3px;
+}
+
+.category-head h2{
+  font-size:34px;
+  margin-top:9px;
+}
+
+/* IMAGE CARDS */
+
+.card{
+  position:relative;
+  height:430px;
+  margin-bottom:16px;
+  overflow:hidden;
+  color:#fff;
+  text-decoration:none;
+  display:block;
+  background:#102333;
+}
+
+.card img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+  transition:.4s;
+}
+
+.card::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(7,20,31,.04) 30%,
+      rgba(7,20,31,.88) 100%
+    );
+}
+
+.card-content{
+  position:absolute;
+  z-index:2;
+  left:24px;
+  right:24px;
+  bottom:25px;
+}
+
+.card-number{
+  display:block;
+  color:#f47721;
+  font-size:11px;
+  font-weight:bold;
+  letter-spacing:2px;
+  margin-bottom:8px;
+}
+
+.card h3{
+  font-size:28px;
+  margin-bottom:8px;
+}
+
+.card p{
+  color:#dce1e4;
+  font-size:14px;
+  line-height:1.5;
+  padding-right:25px;
+}
+
+.arrow{
+  position:absolute;
+  right:23px;
+  bottom:26px;
+  z-index:3;
+  color:#f47721;
+  font-size:25px;
+}
+
+/* CLINIC AREA */
+
+.clinic{
+  background:#fff;
+  padding-top:65px;
+}
+
+/* SUPPORT */
+
+.support{
+  background:#102333;
+  color:#fff;
+  padding:70px 25px;
+}
+
+.support .label{
+  color:#f47721;
+}
+
+.support h2{
+  font-size:39px;
+  line-height:1.08;
+  margin-bottom:38px;
+}
+
+.support-item{
+  padding:22px 0;
+  border-top:1px solid rgba(255,255,255,.17);
+}
+
+.support-item span{
+  color:#f47721;
+  font-size:11px;
+  letter-spacing:2px;
+}
+
+.support-item h3{
+  margin-top:8px;
+  font-size:22px;
+}
+
+.support-item p{
+  color:#aeb8bf;
+  font-size:15px;
+  line-height:1.55;
+  margin-top:7px;
+}
+
+/* CTA */
+
+.cta{
+  padding:75px 25px;
+}
+
+.cta h2{
+  font-size:42px;
+  line-height:1.05;
+  margin-bottom:20px;
+}
+
+.cta p{
+  color:#68727a;
+  font-size:17px;
+  line-height:1.65;
+  margin-bottom:30px;
+}
+
+.buttons{
+  display:flex;
+  gap:10px;
+}
+
+.btn{
+  display:inline-block;
+  padding:17px 20px;
+  text-decoration:none;
+  font-size:14px;
+  font-weight:bold;
+}
+
+.primary{
+  background:#f47721;
+  color:#fff;
+}
+
+.secondary{
+  border:1px solid #102333;
+  color:#102333;
+}
+
+/* FOOTER */
+
+.footer{
+  background:#0d1d29;
+  color:#fff;
+  padding:35px 25px;
+}
+
+.footer strong{
+  display:block;
+  font-size:20px;
+  margin-bottom:8px;
+}
+
+.footer p{
+  color:#9eabb3;
+  font-size:14px;
+  line-height:1.6;
+}
+
+@media(max-width:380px){
+
+  .hero h1{
+    font-size:43px;
+  }
+
+  .intro h2{
+    font-size:37px;
+  }
+
+  .card{
+    height:390px;
+  }
+
+  .card h3{
+    font-size:25px;
+  }
+
+  .buttons{
+    flex-direction:column;
+  }
+
+  .btn{
+    text-align:center;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+<a href="index.html" class="back">← BACK</a>
+
+<div>
+
+<div class="number">
+03 / RESTAURANT & CLINIC
+</div>
+
+<h1>
+Spaces designed<br>
+for every purpose.
+</h1>
+
+<p>
+Interior fit-out solutions for restaurants,
+cafés, medical clinics and professional spaces.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- INTRO -->
+
+<section class="intro">
+
+<div class="label">SPECIALIZED SPACES</div>
+
+<h2>
+Different spaces.<br>
+One reliable team.
+</h2>
+
+<p>
+From restaurant kitchens and dining areas
+to clinic reception and consultation rooms,
+we create practical spaces around the way
+your business needs to operate.
+</p>
+
+</section>
+
+
+<!-- RESTAURANT -->
+
+<section class="category">
+
+<div class="category-head">
+
+<span>01 / HOSPITALITY</span>
+
+<h2>Restaurant Works</h2>
+
+</div>
+
+
+<a class="card" href="#">
+
+<img
+src="https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=900&q=85"
+alt="Commercial Kitchen">
+
+<div class="card-content">
+
+<span class="card-number">01</span>
+
+<h3>Commercial Kitchen</h3>
+
+<p>
+Practical kitchen layouts, interior works
+and technical requirements.
+</p>
+
+</div>
+
+<span class="arrow">→</span>
+
+</a>
+
+
+<a class="card" href="#">
+
+<img
+src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=85"
+alt="Restaurant Dining Area">
+
+<div class="card-content">
+
+<span class="card-number">02</span>
+
+<h3>Dining Area</h3>
+
+<p>
+Comfortable and functional restaurant
+interiors designed around your space.
+</p>
+
+</div>
+
+<span class="arrow">→</span>
+
+</a>
+
+
+<a class="card" href="#">
+
+<img
+src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=900&q=85"
+alt="Kitchen Ventilation">
+
+<div class="card-content">
+
+<span class="card-number">03</span>
+
+<h3>Kitchen Ventilation</h3>
+
+<p>
+Exhaust, ducting and ventilation solutions
+for commercial kitchen requirements.
+</p>
+
+</div>
+
+<span class="arrow">→</span>
+
+</a>
+
+
+<a class="card" href="#">
+
+<img
+src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=900&q=85"
+alt="Restaurant Fit-Out">
+
+<div class="card-content">
+
+<span class="card-number">04</span>
+
+<h3>Restaurant Fit-Out</h3>
+
+<p>
+Interior modifications and fit-out works
+from preparation to final finish.
+</p>
+
+</div>
+
+<span class="arrow">→</span>
+
+</a>
+
+</section>
+
+
+<!-- CLINIC -->
+
+<section class="category clinic">
+
+<div class="category-head">
+
+<span>02 / HEALTHCARE</span>
+
+<h2>Medical Clinic Works</h2>
+
+</div>
+
+
+<a class="card" href="#">
+
+<img
+src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=900&q=85"
+alt="Clinic Reception">
+
+<div class="card-content">
+
+<span class="card-number">01</span>
+
+<h3>Reception & Waiting</h3>
+
+<p>
+Clean and welcoming reception and waiting
+spaces for medical clinics.
+</p>
+
+</div>
+
+<span class="arrow">→</span>
+
+</a>
+
+
+<a class="card" href="#">
+
+<img
+src="https://images.unsplash.com/photo-1516841273335-e39b37888115?auto=format&fit=crop&w=900&q=85"
+alt="Doctor Consulting Room">
+
+<div class="card-content">
+
+<span class="card-number">02</span>
+
+<h3>Doctor Consulting Room</h3>
+
+<p>
+Professional consultation rooms designed
+for comfort, privacy and daily use.
+</p>
+
+</div>
+
+<span class="arrow">→</span>
+
+</a>
+
+
+<a class="card" href="#">
+
+<img
+src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=900&q=85"
+alt="Clinic Treatment Room">
+
+<div class="card-content">
+
+<span class="card-number">03</span>
+
+<h3>Treatment Room</h3>
+
+<p>
+Practical treatment spaces with clean
+finishes and efficient layouts.
+</p>
+
+</div>
+
+<span class="arrow">→</span>
+
+</a>
+
+
+<a class="card" href="#">
+
+<img
+src="https://images.unsplash.com/photo-1538108149393-fbbd81895907?auto=format&fit=crop&w=900&q=85"
+alt="Medical Clinic Fit-Out">
+
+<div class="card-content">
+
+<span class="card-number">04</span>
+
+<h3>Clinic Interior Fit-Out</h3>
+
+<p>
+Interior modifications and fit-out solutions
+for medical and healthcare spaces.
+</p>
+
+</div>
+
+<span class="arrow">→</span>
+
+</a>
+
+</section>
+
+
+<!-- SUPPORT -->
+
+<section class="support">
+
+<div class="label">
+COMPLETE SUPPORT
+</div>
+
+<h2>
+More than<br>
+interior finishing.
+</h2>
+
+
+<div class="support-item">
+
+<span>01</span>
+
+<h3>HVAC & Ventilation</h3>
+
+<p>
+Ventilation and air-conditioning works
+based on the space requirement.
+</p>
+
+</div>
+
+
+<div class="support-item">
+
+<span>02</span>
+
+<h3>Electrical & Plumbing</h3>
+
+<p>
+Supporting MEP modifications for
+restaurant and clinic fit-outs.
+</p>
+
+</div>
+
+
+<div class="support-item">
+
+<span>03</span>
+
+<h3>Gypsum, Glass & Joinery</h3>
+
+<p>
+Partitions, ceilings, glass works
+and custom interior elements.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- CTA -->
+
+<section class="cta">
+
+<div class="label">
+START YOUR PROJECT
+</div>
+
+<h2>
+Restaurant or<br>
+clinic project?
+</h2>
+
+<p>
+Share your space and requirement with us.
+We can help with interior fit-out,
+modifications and related technical works.
+</p>
+
+<div class="buttons">
+
+<a
+class="btn primary"
+href="https://wa.me/971552930619">
+WhatsApp Us
+</a>
+
+<a
+class="btn secondary"
+href="tel:+971552930619">
+Call Us
+</a>
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+<strong>S&S Middle East</strong>
+
+<p>
+Technical Services LLC<br>
+DIP - 1, Dubai - UAE<br>
++971 55 293 0619
+</p>
+
+</footer>
+
+</body>
+</html>
