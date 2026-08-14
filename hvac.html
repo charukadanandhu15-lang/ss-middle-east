@@ -1,1 +1,460 @@
-<!doctype html><html><head><meta name="viewport" content="width=device-width,initial-scale=1"><title>HVAC & Ventilation</title><link rel="stylesheet" href="style.css"></head><body><section class="cta" style="min-height:100vh"><p>S&S MIDDLE EAST</p><h2>HVAC & Ventilation</h2><p style="color:#ccd3da;max-width:600px">Dedicated service page — next we can build this with project photos, service details and enquiry options.</p><a href="index.html">← Back Home</a></section></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>HVAC & Ventilation | S&S Middle East</title>
+
+<style>
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  background:#f4f2ed;
+  color:#102333;
+}
+
+/* HERO */
+.hero{
+  min-height:88vh;
+  position:relative;
+  display:flex;
+  align-items:flex-end;
+  padding:38px 28px 55px;
+  color:#fff;
+
+  background:
+    linear-gradient(to bottom,
+      rgba(7,20,31,.15),
+      rgba(7,20,31,.88)
+    ),
+    url("https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=900&q=85");
+
+  background-size:cover;
+  background-position:center;
+}
+
+.back{
+  position:absolute;
+  top:28px;
+  left:25px;
+  color:#fff;
+  text-decoration:none;
+  font-size:14px;
+  letter-spacing:1px;
+}
+
+.hero-content{
+  max-width:600px;
+}
+
+.number{
+  color:#f47721;
+  font-weight:bold;
+  letter-spacing:2px;
+  margin-bottom:15px;
+  font-size:14px;
+}
+
+.hero h1{
+  font-size:50px;
+  line-height:.97;
+  letter-spacing:-2px;
+  margin-bottom:22px;
+}
+
+.hero p{
+  font-size:18px;
+  line-height:1.55;
+  color:#e7e7e7;
+}
+
+/* INTRO */
+.intro{
+  padding:75px 28px 55px;
+}
+
+.label{
+  color:#c96827;
+  font-size:13px;
+  letter-spacing:4px;
+  font-weight:bold;
+  margin-bottom:24px;
+}
+
+.intro h2{
+  font-size:42px;
+  line-height:1.08;
+  letter-spacing:-1.5px;
+  margin-bottom:25px;
+}
+
+.intro p{
+  color:#69727a;
+  font-size:18px;
+  line-height:1.7;
+}
+
+/* SERVICES */
+.services{
+  padding:10px 28px 75px;
+}
+
+.service{
+  padding:29px 0;
+  border-top:1px solid #d8d8d4;
+}
+
+.service:last-child{
+  border-bottom:1px solid #d8d8d4;
+}
+
+.service span{
+  color:#d56e28;
+  font-size:12px;
+  letter-spacing:2px;
+}
+
+.service h3{
+  margin-top:9px;
+  font-size:27px;
+  font-weight:500;
+  line-height:1.2;
+}
+
+.service p{
+  margin-top:10px;
+  color:#747d83;
+  font-size:15px;
+  line-height:1.55;
+}
+
+/* DARK SECTION */
+.process{
+  background:#102333;
+  color:#fff;
+  padding:70px 28px;
+}
+
+.process .label{
+  color:#f47721;
+}
+
+.process h2{
+  font-size:40px;
+  line-height:1.05;
+  margin-bottom:45px;
+}
+
+.step{
+  display:flex;
+  gap:20px;
+  padding:27px 0;
+  border-top:1px solid rgba(255,255,255,.18);
+}
+
+.step-number{
+  color:#f47721;
+  font-size:13px;
+  padding-top:5px;
+  min-width:25px;
+}
+
+.step h3{
+  font-size:24px;
+  margin-bottom:8px;
+}
+
+.step p{
+  color:#aeb8bf;
+  line-height:1.55;
+  font-size:15px;
+}
+
+/* CTA */
+.cta{
+  background:#f4f2ed;
+  padding:75px 28px;
+}
+
+.cta h2{
+  font-size:43px;
+  line-height:1.05;
+  margin-bottom:20px;
+}
+
+.cta p{
+  color:#68727a;
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:32px;
+}
+
+.buttons{
+  display:flex;
+  gap:12px;
+}
+
+.btn{
+  display:inline-block;
+  padding:17px 22px;
+  text-decoration:none;
+  font-weight:bold;
+  font-size:15px;
+}
+
+.primary{
+  background:#f47721;
+  color:#fff;
+}
+
+.secondary{
+  border:1px solid #102333;
+  color:#102333;
+}
+
+/* FOOTER */
+.footer{
+  background:#0d1d29;
+  color:#fff;
+  padding:38px 28px;
+}
+
+.footer strong{
+  display:block;
+  font-size:20px;
+  margin-bottom:8px;
+}
+
+.footer p{
+  color:#9eabb3;
+  font-size:14px;
+  line-height:1.6;
+}
+
+@media(max-width:380px){
+
+  .hero h1{
+    font-size:44px;
+  }
+
+  .intro h2,
+  .cta h2{
+    font-size:37px;
+  }
+
+  .buttons{
+    flex-direction:column;
+  }
+
+  .btn{
+    text-align:center;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+
+<a class="back" href="index.html">← BACK</a>
+
+<div class="hero-content">
+
+<div class="number">04 / HVAC & VENTILATION</div>
+
+<h1>
+Comfort built<br>
+into your space.
+</h1>
+
+<p>
+Practical air-conditioning and ventilation solutions
+for homes, offices, shops and commercial spaces.
+</p>
+
+</div>
+</section>
+
+
+<section class="intro">
+
+<div class="label">WHAT WE DO</div>
+
+<h2>
+Better airflow.<br>
+Better comfort.
+</h2>
+
+<p>
+From AC installation and duct modifications to ventilation
+and exhaust works, S&S Middle East provides practical HVAC
+solutions designed around your space and requirements.
+</p>
+
+</section>
+
+
+<section class="services">
+
+<div class="service">
+<span>01</span>
+<h3>AC Installation</h3>
+<p>
+Installation and replacement solutions for residential
+and commercial air-conditioning systems.
+</p>
+</div>
+
+<div class="service">
+<span>02</span>
+<h3>Duct Works</h3>
+<p>
+Duct installation, modification and improvement
+for effective air distribution.
+</p>
+</div>
+
+<div class="service">
+<span>03</span>
+<h3>Ventilation Works</h3>
+<p>
+Practical ventilation solutions for offices,
+shops and other indoor spaces.
+</p>
+</div>
+
+<div class="service">
+<span>04</span>
+<h3>Exhaust Systems</h3>
+<p>
+Exhaust and air extraction solutions for kitchens,
+commercial areas and enclosed spaces.
+</p>
+</div>
+
+<div class="service">
+<span>05</span>
+<h3>AC Maintenance</h3>
+<p>
+Routine inspection, servicing and maintenance
+to keep systems working efficiently.
+</p>
+</div>
+
+<div class="service">
+<span>06</span>
+<h3>HVAC Modifications</h3>
+<p>
+Changes and adjustments to existing HVAC systems
+during renovation and fit-out works.
+</p>
+</div>
+
+</section>
+
+
+<section class="process">
+
+<div class="label">HOW WE WORK</div>
+
+<h2>
+Right solution.<br>
+Proper execution.
+</h2>
+
+<div class="step">
+
+<div class="step-number">01</div>
+
+<div>
+<h3>Inspect</h3>
+<p>
+We understand the space, existing system and the work required.
+</p>
+</div>
+
+</div>
+
+
+<div class="step">
+
+<div class="step-number">02</div>
+
+<div>
+<h3>Plan</h3>
+<p>
+We recommend a practical HVAC or ventilation solution for the space.
+</p>
+</div>
+
+</div>
+
+
+<div class="step">
+
+<div class="step-number">03</div>
+
+<div>
+<h3>Execute</h3>
+<p>
+Our team completes the work with attention to performance and finish.
+</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section class="cta">
+
+<div class="label">NEED HVAC WORK?</div>
+
+<h2>
+Let's improve<br>
+your space.
+</h2>
+
+<p>
+Tell us what you need. From small AC and ventilation works
+to HVAC modifications for your fit-out project, our team can help.
+</p>
+
+<div class="buttons">
+
+<a class="btn primary"
+href="https://wa.me/971552930619">
+WhatsApp Us
+</a>
+
+<a class="btn secondary"
+href="tel:+971552930619">
+Call Us
+</a>
+
+</div>
+
+</section>
+
+
+<footer class="footer">
+
+<strong>S&S Middle East</strong>
+
+<p>
+Technical Services LLC<br>
+DIP - 1, Dubai - UAE<br>
++971 55 293 0619
+</p>
+
+</footer>
+
+</body>
+</html>
