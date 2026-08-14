@@ -27,7 +27,6 @@ body{
   padding:38px 28px 55px;
   color:#fff;
 
-  /* Temporary image - we can replace this later */
   background:
     linear-gradient(to bottom,
       rgba(7,20,31,.18),
@@ -104,8 +103,11 @@ body{
 }
 
 .service{
+  display:block;
   padding:27px 0;
   border-top:1px solid #d8d8d4;
+  color:#102333;
+  text-decoration:none;
 }
 
 .service:last-child{
@@ -122,6 +124,22 @@ body{
   margin-top:8px;
   font-size:26px;
   font-weight:500;
+}
+
+/* Clickable service */
+.service-link{
+  position:relative;
+  padding-right:35px;
+}
+
+.service-link::after{
+  content:"→";
+  position:absolute;
+  right:2px;
+  top:50%;
+  transform:translateY(-50%);
+  color:#f47721;
+  font-size:24px;
 }
 
 .process{
@@ -289,10 +307,11 @@ with professional finishing and attention to detail.
 
 <section class="services">
 
-<div class="service">
+<!-- CLICKABLE -->
+<a href="partitions-ceilings.html" class="service service-link">
 <span>01</span>
 <h3>Partitions & Ceilings</h3>
-</div>
+</a>
 
 <div class="service">
 <span>02</span>
