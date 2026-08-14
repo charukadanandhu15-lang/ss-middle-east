@@ -1,1 +1,466 @@
-<!doctype html><html><head><meta name="viewport" content="width=device-width,initial-scale=1"><title>Office & Shop Works</title><link rel="stylesheet" href="style.css"></head><body><section class="cta" style="min-height:100vh"><p>S&S MIDDLE EAST</p><h2>Office & Shop Works</h2><p style="color:#ccd3da;max-width:600px">Dedicated service page — next we can build this with project photos, service details and enquiry options.</p><a href="index.html">← Back Home</a></section></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Office & Shop Works | S&S Middle East</title>
+
+<style>
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  background:#f4f2ed;
+  color:#102333;
+}
+
+/* HERO */
+
+.hero{
+  min-height:88vh;
+  position:relative;
+  display:flex;
+  align-items:flex-end;
+  padding:38px 28px 55px;
+  color:#fff;
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(7,20,31,.16),
+      rgba(7,20,31,.86)
+    ),
+    url("https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=900&q=88");
+
+  background-size:cover;
+  background-position:center;
+}
+
+.back{
+  position:absolute;
+  top:28px;
+  left:25px;
+  color:#fff;
+  text-decoration:none;
+  font-size:14px;
+  letter-spacing:1px;
+}
+
+.hero-content{
+  max-width:600px;
+}
+
+.number{
+  color:#f47721;
+  font-weight:bold;
+  letter-spacing:2px;
+  margin-bottom:15px;
+}
+
+.hero h1{
+  font-size:51px;
+  line-height:.96;
+  letter-spacing:-2px;
+  margin-bottom:22px;
+}
+
+.hero p{
+  font-size:19px;
+  line-height:1.55;
+  color:#e7e7e7;
+}
+
+/* INTRO */
+
+.intro{
+  padding:75px 28px 60px;
+}
+
+.label{
+  color:#c96827;
+  font-size:13px;
+  letter-spacing:4px;
+  font-weight:bold;
+  margin-bottom:24px;
+}
+
+.intro h2{
+  font-size:42px;
+  line-height:1.08;
+  letter-spacing:-1.5px;
+  margin-bottom:25px;
+}
+
+.intro p{
+  color:#69727a;
+  font-size:18px;
+  line-height:1.7;
+}
+
+/* SERVICES */
+
+.services{
+  padding:10px 28px 70px;
+}
+
+.service{
+  padding:27px 0;
+  border-top:1px solid #d8d8d4;
+}
+
+.service:last-child{
+  border-bottom:1px solid #d8d8d4;
+}
+
+.service span{
+  color:#d56e28;
+  font-size:12px;
+  letter-spacing:2px;
+}
+
+.service h3{
+  margin-top:8px;
+  font-size:26px;
+  font-weight:500;
+}
+
+/* DARK SECTION */
+
+.business{
+  background:#102333;
+  color:#fff;
+  padding:70px 28px;
+}
+
+.business .label{
+  color:#f47721;
+}
+
+.business h2{
+  font-size:40px;
+  line-height:1.05;
+  margin-bottom:20px;
+}
+
+.business > p{
+  color:#aeb8bf;
+  font-size:17px;
+  line-height:1.65;
+  margin-bottom:42px;
+}
+
+.item{
+  padding:25px 0;
+  border-top:1px solid rgba(255,255,255,.18);
+}
+
+.item span{
+  color:#f47721;
+  font-size:12px;
+  letter-spacing:2px;
+}
+
+.item h3{
+  font-size:24px;
+  margin:8px 0 7px;
+}
+
+.item p{
+  color:#aeb8bf;
+  line-height:1.55;
+}
+
+/* CTA */
+
+.cta{
+  background:#f4f2ed;
+  padding:75px 28px;
+}
+
+.cta h2{
+  font-size:43px;
+  line-height:1.05;
+  margin-bottom:20px;
+}
+
+.cta p{
+  color:#68727a;
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:32px;
+}
+
+.buttons{
+  display:flex;
+  gap:12px;
+}
+
+.btn{
+  display:inline-block;
+  padding:17px 22px;
+  text-decoration:none;
+  font-weight:bold;
+  font-size:15px;
+}
+
+.primary{
+  background:#f47721;
+  color:#fff;
+}
+
+.secondary{
+  border:1px solid #102333;
+  color:#102333;
+}
+
+/* FOOTER */
+
+.footer{
+  background:#0d1d29;
+  color:#fff;
+  padding:35px 28px;
+}
+
+.footer strong{
+  display:block;
+  font-size:20px;
+  margin-bottom:8px;
+}
+
+.footer p{
+  color:#9eabb3;
+  font-size:14px;
+  line-height:1.6;
+}
+
+/* SMALL MOBILE */
+
+@media(max-width:380px){
+
+  .hero h1{
+    font-size:44px;
+  }
+
+  .intro h2,
+  .cta h2{
+    font-size:37px;
+  }
+
+  .business h2{
+    font-size:36px;
+  }
+
+  .buttons{
+    flex-direction:column;
+  }
+
+  .btn{
+    text-align:center;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<a class="back" href="index.html">← BACK</a>
+
+<div class="hero-content">
+
+<div class="number">
+02 / OFFICE & SHOP WORKS
+</div>
+
+<h1>
+Spaces built<br>
+for business.
+</h1>
+
+<p>
+Practical fit-out and modification solutions
+for offices, shops and commercial spaces.
+</p>
+
+</div>
+</section>
+
+
+<!-- INTRO -->
+
+<section class="intro">
+
+<div class="label">WHAT WE DO</div>
+
+<h2>
+Make your space<br>
+work for your business.
+</h2>
+
+<p>
+From office improvements to complete shop fit-outs,
+S&S Middle East helps create practical, professional
+spaces designed around your business requirements.
+</p>
+
+</section>
+
+
+<!-- SERVICES -->
+
+<section class="services">
+
+<div class="service">
+<span>01</span>
+<h3>Office Fit-Out</h3>
+</div>
+
+<div class="service">
+<span>02</span>
+<h3>Shop Fit-Out</h3>
+</div>
+
+<div class="service">
+<span>03</span>
+<h3>Partitions & Ceilings</h3>
+</div>
+
+<div class="service">
+<span>04</span>
+<h3>Flooring Works</h3>
+</div>
+
+<div class="service">
+<span>05</span>
+<h3>Painting & Finishing</h3>
+</div>
+
+<div class="service">
+<span>06</span>
+<h3>Interior Modifications</h3>
+</div>
+
+</section>
+
+
+<!-- BUSINESS SECTION -->
+
+<section class="business">
+
+<div class="label">BUILT AROUND YOUR BUSINESS</div>
+
+<h2>
+Practical spaces.<br>
+Professional finish.
+</h2>
+
+<p>
+Whether you are opening a new space or improving
+an existing one, we provide the interior works
+needed to get your business space ready.
+</p>
+
+
+<div class="item">
+
+<span>01 / OFFICE</span>
+
+<h3>Better Workspaces</h3>
+
+<p>
+Interior modifications and fit-out works for
+offices, workspaces and meeting areas.
+</p>
+
+</div>
+
+
+<div class="item">
+
+<span>02 / RETAIL</span>
+
+<h3>Ready for Business</h3>
+
+<p>
+Practical interior solutions for shops,
+retail spaces and commercial units.
+</p>
+
+</div>
+
+
+<div class="item">
+
+<span>03 / MODIFICATIONS</span>
+
+<h3>Upgrade Existing Spaces</h3>
+
+<p>
+Partitions, ceilings, flooring, painting
+and other interior improvement works.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- CTA -->
+
+<section class="cta">
+
+<div class="label">START YOUR PROJECT</div>
+
+<h2>
+Planning an office<br>
+or shop project?
+</h2>
+
+<p>
+Tell us what your space needs.
+Our team can help with interior modifications,
+renovation and complete fit-out works.
+</p>
+
+<div class="buttons">
+
+<a class="btn primary"
+href="https://wa.me/971552930619">
+WhatsApp Us
+</a>
+
+<a class="btn secondary"
+href="tel:+971552930619">
+Call Us
+</a>
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+<strong>S&S Middle East</strong>
+
+<p>
+Technical Services LLC<br>
+DIP - 1, Dubai - UAE<br>
++971 55 293 0619
+</p>
+
+</footer>
+
+</body>
+</html>
