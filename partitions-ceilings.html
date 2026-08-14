@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Partitions & Ceilings | S&S Middle East</title>
+
+<style>
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+body{
+  font-family:Arial, Helvetica, sans-serif;
+  background:#f4f1eb;
+  color:#102638;
+}
+
+/* HERO */
+
+.hero{
+  min-height:88vh;
+  position:relative;
+  display:flex;
+  align-items:flex-end;
+  padding:45px 28px;
+  overflow:hidden;
+
+  /* Temporary image - later replace with our own vertical image */
+  background-image:
+    linear-gradient(
+      to bottom,
+      rgba(8,20,30,.15),
+      rgba(8,20,30,.82)
+    ),
+    url("https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=85");
+
+  background-size:cover;
+  background-position:center;
+}
+
+.hero-content{
+  position:relative;
+  z-index:2;
+  max-width:560px;
+}
+
+.number{
+  color:#f47a22;
+  font-size:17px;
+  font-weight:700;
+  letter-spacing:3px;
+  margin-bottom:20px;
+}
+
+.hero h1{
+  color:white;
+  font-size:52px;
+  line-height:1.02;
+  letter-spacing:-2px;
+  margin-bottom:22px;
+}
+
+.hero p{
+  color:rgba(255,255,255,.88);
+  font-size:20px;
+  line-height:1.55;
+}
+
+/* INTRO */
+
+.intro{
+  padding:85px 28px 70px;
+}
+
+.small-title{
+  color:#c46a2c;
+  font-size:15px;
+  font-weight:700;
+  letter-spacing:4px;
+  margin-bottom:28px;
+}
+
+.intro h2{
+  font-size:43px;
+  line-height:1.05;
+  letter-spacing:-1.5px;
+  margin-bottom:30px;
+}
+
+.intro p{
+  color:#687078;
+  font-size:19px;
+  line-height:1.75;
+}
+
+/* WORK IMAGE */
+
+.work-image{
+  margin:0 20px;
+  height:520px;
+  overflow:hidden;
+}
+
+.work-image img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center;
+}
+
+/* SERVICES */
+
+.services{
+  padding:80px 28px;
+}
+
+.services h2{
+  font-size:40px;
+  line-height:1.1;
+  margin-bottom:45px;
+}
+
+.service{
+  padding:27px 0;
+  border-top:1px solid #d5d1ca;
+}
+
+.service:last-child{
+  border-bottom:1px solid #d5d1ca;
+}
+
+.service span{
+  display:block;
+  color:#d46f29;
+  font-size:14px;
+  letter-spacing:2px;
+  margin-bottom:10px;
+}
+
+.service h3{
+  font-size:27px;
+  font-weight:500;
+}
+
+/* WHY */
+
+.why{
+  background:#102638;
+  color:white;
+  padding:80px 28px;
+}
+
+.why .small-title{
+  color:#f47a22;
+}
+
+.why h2{
+  font-size:40px;
+  line-height:1.1;
+  margin-bottom:35px;
+}
+
+.why-item{
+  padding:22px 0;
+  border-top:1px solid rgba(255,255,255,.15);
+}
+
+.why-item h3{
+  font-size:21px;
+  margin-bottom:8px;
+}
+
+.why-item p{
+  color:#aeb8bf;
+  line-height:1.6;
+  font-size:16px;
+}
+
+/* CTA */
+
+.cta{
+  padding:85px 28px;
+  text-align:left;
+}
+
+.cta h2{
+  font-size:43px;
+  line-height:1.05;
+  margin-bottom:20px;
+}
+
+.cta p{
+  color:#6d7378;
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:32px;
+}
+
+.button{
+  display:inline-block;
+  background:#f47721;
+  color:white;
+  text-decoration:none;
+  padding:18px 28px;
+  font-weight:700;
+  font-size:17px;
+}
+
+/* MOBILE */
+
+@media(max-width:600px){
+
+  .hero{
+    min-height:82vh;
+    padding:38px 24px;
+    background-position:center center;
+  }
+
+  .hero h1{
+    font-size:46px;
+  }
+
+  .hero p{
+    font-size:18px;
+  }
+
+  .intro{
+    padding:70px 24px 60px;
+  }
+
+  .intro h2{
+    font-size:39px;
+  }
+
+  .work-image{
+    margin:0 16px;
+    height:500px;
+  }
+
+  .services,
+  .why,
+  .cta{
+    padding-left:24px;
+    padding-right:24px;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+
+<section class="hero">
+  <div class="hero-content">
+
+    <div class="number">
+      01 / PARTITIONS & CEILINGS
+    </div>
+
+    <h1>
+      Shape your space.<br>
+      Build it better.
+    </h1>
+
+    <p>
+      Practical partition and ceiling solutions
+      for homes, offices, shops and commercial spaces.
+    </p>
+
+  </div>
+</section>
+
+
+<!-- INTRO -->
+
+<section class="intro">
+
+  <div class="small-title">
+    WHAT WE DO
+  </div>
+
+  <h2>
+    Smart changes.<br>
+    Clean finish.
+  </h2>
+
+  <p>
+    From creating a new room to improving an existing
+    workspace, we handle partition and ceiling works
+    with practical planning and professional finishing.
+  </p>
+
+</section>
+
+
+<!-- IMAGE -->
+
+<section class="work-image">
+
+  <img
+  src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=900&q=85"
+  alt="Interior partition and ceiling work">
+
+</section>
+
+
+<!-- SERVICES -->
+
+<section class="services">
+
+  <div class="small-title">
+    OUR WORKS
+  </div>
+
+  <h2>
+    What we can do.
+  </h2>
+
+  <div class="service">
+    <span>01</span>
+    <h3>Gypsum Partitions</h3>
+  </div>
+
+  <div class="service">
+    <span>02</span>
+    <h3>False Ceilings</h3>
+  </div>
+
+  <div class="service">
+    <span>03</span>
+    <h3>Room Dividers</h3>
+  </div>
+
+  <div class="service">
+    <span>04</span>
+    <h3>Office Partitions</h3>
+  </div>
+
+  <div class="service">
+    <span>05</span>
+    <h3>Ceiling Modifications</h3>
+  </div>
+
+  <div class="service">
+    <span>06</span>
+    <h3>Repair & Finishing</h3>
+  </div>
+
+</section>
+
+
+<!-- WHY -->
+
+<section class="why">
+
+  <div class="small-title">
+    S&S MIDDLE EAST
+  </div>
+
+  <h2>
+    Small works.<br>
+    Done properly.
+  </h2>
+
+  <div class="why-item">
+    <h3>Practical Solutions</h3>
+    <p>
+      Solutions planned around your actual space
+      and requirement.
+    </p>
+  </div>
+
+  <div class="why-item">
+    <h3>Clean Finishing</h3>
+    <p>
+      Attention to alignment, finishing and the
+      small details that make the difference.
+    </p>
+  </div>
+
+  <div class="why-item">
+    <h3>Residential & Commercial</h3>
+    <p>
+      Suitable for homes, offices, shops and
+      other commercial spaces.
+    </p>
+  </div>
+
+</section>
+
+
+<!-- CTA -->
+
+<section class="cta">
+
+  <div class="small-title">
+    HAVE A SMALL PROJECT?
+  </div>
+
+  <h2>
+    Tell us what<br>
+    you need done.
+  </h2>
+
+  <p>
+    Share your requirement with S&S Middle East
+    and get a practical solution for your space.
+  </p>
+
+  <a class="button" href="#">
+    Get a Quote →
+  </a>
+
+</section>
+
+</body>
+</html>
