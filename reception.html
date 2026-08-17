@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Reception & Waiting Areas | S&S Middle East</title>
+
+<style>
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  background:#f4f2ed;
+  color:#102333;
+}
+
+/* HERO */
+
+.hero{
+  min-height:88vh;
+  position:relative;
+  display:flex;
+  align-items:flex-end;
+  padding:38px 28px 55px;
+  color:#fff;
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(7,20,31,.12),
+      rgba(7,20,31,.88)
+    ),
+    url("https://images.unsplash.com/photo-1497366811364-ccf3f3e0f7f9?auto=format&fit=crop&w=1000&q=88");
+
+  background-size:cover;
+  background-position:center;
+}
+
+.back{
+  position:absolute;
+  top:28px;
+  left:25px;
+  color:#fff;
+  text-decoration:none;
+  font-size:14px;
+  letter-spacing:1px;
+}
+
+.hero-content{
+  max-width:600px;
+}
+
+.number{
+  color:#f47721;
+  font-size:13px;
+  font-weight:bold;
+  letter-spacing:2px;
+  margin-bottom:15px;
+}
+
+.hero h1{
+  font-size:49px;
+  line-height:.96;
+  letter-spacing:-2px;
+  margin-bottom:22px;
+}
+
+.hero p{
+  font-size:19px;
+  line-height:1.55;
+  color:#e7e7e7;
+}
+
+
+/* INTRO */
+
+.intro{
+  padding:75px 28px 60px;
+}
+
+.label{
+  color:#c96827;
+  font-size:12px;
+  letter-spacing:4px;
+  font-weight:bold;
+  margin-bottom:24px;
+}
+
+.intro h2{
+  font-size:42px;
+  line-height:1.08;
+  letter-spacing:-1.5px;
+  margin-bottom:25px;
+}
+
+.intro p{
+  color:#69727a;
+  font-size:18px;
+  line-height:1.7;
+}
+
+
+/* AREAS */
+
+.areas{
+  padding:10px 28px 75px;
+}
+
+.area{
+  padding:28px 0;
+  border-top:1px solid #d8d8d4;
+}
+
+.area:last-child{
+  border-bottom:1px solid #d8d8d4;
+}
+
+.area span{
+  color:#d56e28;
+  font-size:11px;
+  font-weight:bold;
+  letter-spacing:2px;
+}
+
+.area h3{
+  font-size:26px;
+  font-weight:500;
+  margin:9px 0;
+}
+
+.area p{
+  color:#747d83;
+  font-size:15px;
+  line-height:1.6;
+}
+
+
+/* DARK SECTION */
+
+.experience{
+  background:#102333;
+  color:#fff;
+  padding:70px 28px;
+}
+
+.experience .label{
+  color:#f47721;
+}
+
+.experience h2{
+  font-size:40px;
+  line-height:1.05;
+  margin-bottom:20px;
+}
+
+.experience > p{
+  color:#aeb8bf;
+  font-size:17px;
+  line-height:1.65;
+  margin-bottom:40px;
+}
+
+.item{
+  padding:25px 0;
+  border-top:1px solid rgba(255,255,255,.18);
+}
+
+.item span{
+  color:#f47721;
+  font-size:11px;
+  letter-spacing:2px;
+}
+
+.item h3{
+  font-size:23px;
+  margin:8px 0 7px;
+}
+
+.item p{
+  color:#aeb8bf;
+  font-size:15px;
+  line-height:1.6;
+}
+
+
+/* PROJECT TYPES */
+
+.projects{
+  background:#fff;
+  padding:75px 28px;
+}
+
+.projects h2{
+  font-size:39px;
+  line-height:1.07;
+  margin-bottom:20px;
+}
+
+.projects > p{
+  color:#69727a;
+  font-size:17px;
+  line-height:1.7;
+  margin-bottom:35px;
+}
+
+.project{
+  padding:24px 0;
+  border-top:1px solid #d8d8d4;
+}
+
+.project:last-child{
+  border-bottom:1px solid #d8d8d4;
+}
+
+.project span{
+  color:#d56e28;
+  font-size:11px;
+  letter-spacing:2px;
+}
+
+.project h3{
+  font-size:23px;
+  margin:8px 0;
+}
+
+.project p{
+  color:#747d83;
+  font-size:15px;
+  line-height:1.6;
+}
+
+
+/* CTA */
+
+.cta{
+  background:#f4f2ed;
+  padding:75px 28px;
+}
+
+.cta h2{
+  font-size:43px;
+  line-height:1.05;
+  margin-bottom:20px;
+}
+
+.cta p{
+  color:#68727a;
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:32px;
+}
+
+.buttons{
+  display:flex;
+  gap:12px;
+}
+
+.btn{
+  display:inline-block;
+  padding:17px 22px;
+  text-decoration:none;
+  font-weight:bold;
+  font-size:15px;
+}
+
+.primary{
+  background:#f47721;
+  color:#fff;
+}
+
+.secondary{
+  border:1px solid #102333;
+  color:#102333;
+}
+
+
+/* FOOTER */
+
+.footer{
+  background:#0d1d29;
+  color:#fff;
+  padding:35px 28px;
+}
+
+.footer strong{
+  display:block;
+  font-size:20px;
+  margin-bottom:8px;
+}
+
+.footer p{
+  color:#9eabb3;
+  font-size:14px;
+  line-height:1.6;
+}
+
+
+@media(max-width:380px){
+
+  .hero h1{
+    font-size:42px;
+  }
+
+  .intro h2,
+  .cta h2{
+    font-size:37px;
+  }
+
+  .experience h2,
+  .projects h2{
+    font-size:35px;
+  }
+
+  .buttons{
+    flex-direction:column;
+  }
+
+  .btn{
+    text-align:center;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+<a class="back" href="office-shop.html">
+← OFFICE & SHOP
+</a>
+
+<div class="hero-content">
+
+<div class="number">
+05 / RECEPTION & WAITING AREAS
+</div>
+
+<h1>
+Make the first<br>
+impression count.
+</h1>
+
+<p>
+Professional reception and waiting areas
+designed for clients, visitors and
+everyday business use.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- INTRO -->
+
+<section class="intro">
+
+<div class="label">
+FRONT-OF-HOUSE SPACES
+</div>
+
+<h2>
+Welcoming spaces.<br>
+Practical design.
+</h2>
+
+<p>
+Your reception is often the first part of
+your business a customer or visitor sees.
+<br><br>
+S&S Middle East creates and improves reception
+and waiting areas with practical layouts,
+professional finishes and solutions designed
+around the available space.
+</p>
+
+</section>
+
+
+<!-- MAIN AREAS -->
+
+<section class="areas">
+
+<div class="area">
+<span>01 / RECEPTION DESK</span>
+<h3>Reception Counters</h3>
+<p>
+Practical reception and front-desk counters
+designed around staff and visitor requirements.
+</p>
+</div>
+
+
+<div class="area">
+<span>02 / WAITING</span>
+<h3>Visitor Waiting Areas</h3>
+<p>
+Comfortable and organised seating areas
+for clients, customers and visitors.
+</p>
+</div>
+
+
+<div class="area">
+<span>03 / ENTRANCE</span>
+<h3>Entrance Areas</h3>
+<p>
+Clean and professional entrance spaces
+that connect naturally with the reception.
+</p>
+</div>
+
+
+<div class="area">
+<span>04 / BRANDING</span>
+<h3>Feature & Branding Walls</h3>
+<p>
+Feature walls and suitable areas for
+company logos, signage and brand identity.
+</p>
+</div>
+
+
+<div class="area">
+<span>05 / STORAGE</span>
+<h3>Reception Storage</h3>
+<p>
+Cabinets and practical storage solutions
+for front-desk everyday requirements.
+</p>
+</div>
+
+
+<div class="area">
+<span>06 / LIGHTING</span>
+<h3>Reception Lighting</h3>
+<p>
+Lighting arrangements that support a
+comfortable and professional environment.
+</p>
+</div>
+
+</section>
+
+
+<!-- EXPERIENCE -->
+
+<section class="experience">
+
+<div class="label">
+MORE THAN A FRONT DESK
+</div>
+
+<h2>
+Designed around<br>
+the visitor experience.
+</h2>
+
+<p>
+A reception area needs to look professional,
+but it also needs to work properly for the
+people using it every day.
+</p>
+
+
+<div class="item">
+
+<span>01 / FLOW</span>
+
+<h3>Clear Movement</h3>
+
+<p>
+Plan the entrance, reception counter and
+waiting area to maintain comfortable movement.
+</p>
+
+</div>
+
+
+<div class="item">
+
+<span>02 / FUNCTION</span>
+
+<h3>Practical for Staff</h3>
+
+<p>
+Reception work areas can include suitable
+storage, power and equipment locations.
+</p>
+
+</div>
+
+
+<div class="item">
+
+<span>03 / APPEARANCE</span>
+
+<h3>Professional Finish</h3>
+
+<p>
+Interior details can be coordinated to
+create a clean and consistent appearance.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- PROJECT TYPES -->
+
+<section class="projects">
+
+<div class="label">
+FLEXIBLE PROJECT SCOPE
+</div>
+
+<h2>
+Create new or<br>
+improve existing.
+</h2>
+
+<p>
+The work can be based on a single reception
+area or included as part of a larger office
+or commercial fit-out.
+</p>
+
+
+<div class="project">
+
+<span>01 / COUNTER</span>
+
+<h3>Reception Desk Upgrade</h3>
+
+<p>
+Replace, modify or improve an existing
+reception counter and surrounding area.
+</p>
+
+</div>
+
+
+<div class="project">
+
+<span>02 / AREA</span>
+
+<h3>Reception Area Renovation</h3>
+
+<p>
+Improve the waiting area, walls, lighting,
+storage and other selected elements.
+</p>
+
+</div>
+
+
+<div class="project">
+
+<span>03 / NEW SETUP</span>
+
+<h3>Complete Reception Setup</h3>
+
+<p>
+Create a new front-of-house area for
+an office or commercial space.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- CTA -->
+
+<section class="cta">
+
+<div class="label">
+START YOUR PROJECT
+</div>
+
+<h2>
+Need a better<br>
+reception area?
+</h2>
+
+<p>
+Tell us about your space and what needs
+to be created or improved. Our team can help
+with small modifications or a complete setup.
+</p>
+
+<div class="buttons">
+
+<a class="btn primary"
+href="https://wa.me/971552930619">
+WhatsApp Us
+</a>
+
+<a class="btn secondary"
+href="tel:+971552930619">
+Call Us
+</a>
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+<strong>S&S Middle East</strong>
+
+<p>
+Technical Services LLC<br>
+DIP - 1, Dubai - UAE<br>
++971 55 293 0619
+</p>
+
+</footer>
+
+</body>
+</html>
