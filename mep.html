@@ -35,7 +35,7 @@ body{
       rgba(7,20,31,.12),
       rgba(7,20,31,.90)
     ),
-    url("https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&w=900&q=88");
+    url("https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&w=1000&q=88");
 
   background-size:cover;
   background-position:center;
@@ -76,10 +76,11 @@ body{
   line-height:1.6;
 }
 
+
 /* INTRO */
 
 .intro{
-  padding:75px 26px 60px;
+  padding:70px 26px 55px;
 }
 
 .label{
@@ -87,21 +88,22 @@ body{
   font-size:12px;
   font-weight:bold;
   letter-spacing:4px;
-  margin-bottom:23px;
+  margin-bottom:22px;
 }
 
 .intro h2{
   font-size:41px;
   line-height:1.07;
   letter-spacing:-1.4px;
-  margin-bottom:25px;
+  margin-bottom:23px;
 }
 
 .intro p{
   color:#68727a;
   font-size:17px;
-  line-height:1.75;
+  line-height:1.7;
 }
+
 
 /* SERVICES */
 
@@ -110,7 +112,7 @@ body{
 }
 
 .service{
-  padding:29px 0;
+  padding:31px 0;
   border-top:1px solid #d6d3cd;
 }
 
@@ -126,7 +128,7 @@ body{
 }
 
 .service h3{
-  font-size:26px;
+  font-size:27px;
   font-weight:500;
   margin:9px 0 10px;
 }
@@ -137,7 +139,113 @@ body{
   line-height:1.6;
 }
 
-/* APPLICATIONS */
+
+/* DETAIL TAGS */
+
+.details{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin-top:17px;
+}
+
+.details span{
+  background:#e9e6df;
+  color:#46535c;
+  padding:8px 11px;
+  font-size:12px;
+  line-height:1.2;
+}
+
+
+/* VISUAL SECTION */
+
+.visuals{
+  background:#fff;
+  padding:68px 18px 72px;
+}
+
+.visual-head{
+  padding:0 8px 28px;
+}
+
+.visual-head h2{
+  font-size:37px;
+  line-height:1.07;
+  letter-spacing:-1px;
+  margin-top:9px;
+}
+
+.visual-head p{
+  color:#717a81;
+  font-size:15px;
+  line-height:1.6;
+  margin-top:14px;
+}
+
+
+/* VISUAL CARD */
+
+.visual-card{
+  position:relative;
+  height:350px;
+  overflow:hidden;
+  margin-bottom:15px;
+  background:#102333;
+  color:#fff;
+}
+
+.visual-card.large{
+  height:400px;
+}
+
+.visual-card img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+
+.visual-card::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(7,20,31,.03) 25%,
+      rgba(7,20,31,.90) 100%
+    );
+}
+
+.visual-content{
+  position:absolute;
+  z-index:2;
+  left:23px;
+  right:23px;
+  bottom:24px;
+}
+
+.visual-content span{
+  color:#f47721;
+  font-size:10px;
+  font-weight:bold;
+  letter-spacing:2px;
+}
+
+.visual-content h3{
+  font-size:26px;
+  margin:8px 0;
+}
+
+.visual-content p{
+  color:#dce1e4;
+  font-size:14px;
+  line-height:1.5;
+}
+
+
+/* WHERE WE WORK */
 
 .applications{
   background:#102333;
@@ -152,30 +260,29 @@ body{
 .applications h2{
   font-size:39px;
   line-height:1.08;
-  margin-bottom:38px;
+  margin-bottom:20px;
 }
 
-.application{
-  padding:25px 0;
-  border-top:1px solid rgba(255,255,255,.16);
-}
-
-.application span{
-  color:#f47721;
-  font-size:11px;
-  letter-spacing:2px;
-}
-
-.application h3{
-  font-size:22px;
-  margin:8px 0;
-}
-
-.application p{
+.applications > p{
   color:#aeb8bf;
-  font-size:15px;
-  line-height:1.6;
+  font-size:16px;
+  line-height:1.65;
+  margin-bottom:35px;
 }
+
+.space-tags{
+  display:flex;
+  flex-wrap:wrap;
+  gap:9px;
+}
+
+.space-tags span{
+  border:1px solid rgba(255,255,255,.22);
+  color:#e2e7e9;
+  padding:11px 13px;
+  font-size:13px;
+}
+
 
 /* PROCESS */
 
@@ -196,6 +303,10 @@ body{
   border-top:1px solid #d6d3cd;
 }
 
+.step:last-child{
+  border-bottom:1px solid #d6d3cd;
+}
+
 .step-number{
   color:#f47721;
   font-size:12px;
@@ -213,6 +324,7 @@ body{
   font-size:15px;
   line-height:1.55;
 }
+
 
 /* CTA */
 
@@ -262,6 +374,7 @@ body{
   color:#fff;
 }
 
+
 /* FOOTER */
 
 .footer{
@@ -287,6 +400,7 @@ body{
   text-decoration:none;
 }
 
+
 /* MOBILE */
 
 @media(max-width:380px){
@@ -298,6 +412,18 @@ body{
   .intro h2,
   .process h2{
     font-size:36px;
+  }
+
+  .visual-head h2{
+    font-size:33px;
+  }
+
+  .visual-card.large{
+    height:370px;
+  }
+
+  .visual-card{
+    height:330px;
   }
 
   .applications h2,
@@ -325,7 +451,9 @@ body{
 
 <section class="hero">
 
-<a class="back" href="index.html">← BACK</a>
+<a class="back" href="index.html">
+← BACK
+</a>
 
 <div class="hero-content">
 
@@ -339,9 +467,9 @@ Properly done.
 </h1>
 
 <p>
-Electrical and plumbing works supporting
-interior fit-outs, renovations and everyday
-property requirements.
+Practical electrical and plumbing works
+for fit-outs, renovations, modifications
+and everyday property requirements.
 </p>
 
 </div>
@@ -354,7 +482,7 @@ property requirements.
 <section class="intro">
 
 <div class="label">
-MEP SERVICES
+ELECTRICAL & PLUMBING
 </div>
 
 <h2>
@@ -363,178 +491,286 @@ behind every space.
 </h2>
 
 <p>
-S&S Middle East provides practical electrical
-and plumbing solutions for homes, offices,
-shops, restaurants, clinics and other
-commercial spaces.
-<br><br>
-Whether it is a small modification, repair,
-new installation or supporting work for an
-interior fit-out, our team can handle the
-required MEP works.
+From a new electrical point or plumbing
+connection to complete modifications during
+a renovation, we provide practical MEP works
+based on what your space requires.
 </p>
 
 </section>
 
 
-<!-- ALL MEP SERVICES -->
+<!-- SERVICES -->
 
 <section class="services">
 
 
+<!-- 01 ELECTRICAL -->
+
 <div class="service">
 
-<span class="service-number">01 / ELECTRICAL</span>
+<span class="service-number">
+01 / ELECTRICAL
+</span>
 
-<h3>Electrical Works</h3>
+<h3>
+Electrical Works
+</h3>
 
 <p>
-Electrical installation, modification and repair
-works for residential and commercial interiors.
+Electrical installation, modifications and
+repair works for residential and commercial spaces.
+</p>
+
+<div class="details">
+
+<span>Electrical Installation</span>
+<span>Power Points</span>
+<span>Sockets</span>
+<span>Point Relocation</span>
+<span>DB Works</span>
+<span>Distribution Works</span>
+<span>Electrical Repairs</span>
+
+</div>
+
+</div>
+
+
+<!-- 02 LIGHTING -->
+
+<div class="service">
+
+<span class="service-number">
+02 / LIGHTING
+</span>
+
+<h3>
+Lighting Works
+</h3>
+
+<p>
+Installation and modification of interior
+lighting based on the layout and requirement
+of your space.
+</p>
+
+<div class="details">
+
+<span>Ceiling Lights</span>
+<span>Spotlights</span>
+<span>Lighting Points</span>
+<span>Light Relocation</span>
+<span>Lighting Modifications</span>
+
+</div>
+
+</div>
+
+
+<!-- 03 PLUMBING -->
+
+<div class="service">
+
+<span class="service-number">
+03 / PLUMBING
+</span>
+
+<h3>
+Plumbing Works
+</h3>
+
+<p>
+Plumbing installation, modifications and
+repair works for kitchens, washrooms and
+other interior requirements.
+</p>
+
+<div class="details">
+
+<span>Water Supply</span>
+<span>New Connections</span>
+<span>Point Relocation</span>
+<span>Drainage Works</span>
+<span>Plumbing Repairs</span>
+<span>Modifications</span>
+
+</div>
+
+</div>
+
+
+<!-- 04 KITCHEN / WASHROOM -->
+
+<div class="service">
+
+<span class="service-number">
+04 / KITCHEN & WASHROOM
+</span>
+
+<h3>
+Kitchen & Washroom MEP
+</h3>
+
+<p>
+Electrical and plumbing works required
+during kitchen and washroom setup,
+renovation or modification.
+</p>
+
+<div class="details">
+
+<span>Kitchen Connections</span>
+<span>Washroom Plumbing</span>
+<span>Power Points</span>
+<span>Water Lines</span>
+<span>Drainage</span>
+<span>Renovation Support</span>
+
+</div>
+
+</div>
+
+
+<!-- 05 MODIFICATION -->
+
+<div class="service">
+
+<span class="service-number">
+05 / MODIFICATIONS
+</span>
+
+<h3>
+MEP Modifications & Repairs
+</h3>
+
+<p>
+Changes and repairs to existing electrical
+and plumbing services during fit-out,
+renovation or everyday maintenance works.
+</p>
+
+<div class="details">
+
+<span>Existing System Changes</span>
+<span>Fit-Out Support</span>
+<span>Renovation Works</span>
+<span>Electrical Repairs</span>
+<span>Plumbing Repairs</span>
+
+</div>
+
+</div>
+
+
+</section>
+
+
+<!-- VISUAL EXAMPLES -->
+
+<section class="visuals">
+
+<div class="visual-head">
+
+<div class="label">
+PRACTICAL MEP WORKS
+</div>
+
+<h2>
+From small points<br>
+to complete changes.
+</h2>
+
+<p>
+The scope depends on what your
+space actually needs.
 </p>
 
 </div>
 
 
-<div class="service">
+<!-- ELECTRICAL VISUAL -->
 
-<span class="service-number">02 / LIGHTING</span>
+<div class="visual-card large">
 
-<h3>Lighting Installation</h3>
+<img
+src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=900&q=85"
+alt="Electrical Works">
+
+<div class="visual-content">
+
+<span>
+01 / ELECTRICAL
+</span>
+
+<h3>
+Electrical Changes
+</h3>
 
 <p>
-Installation and modification of interior lighting,
-ceiling lights, spotlights and other lighting points.
+New points, lighting and modifications
+for changing interior requirements.
 </p>
 
 </div>
 
+</div>
 
-<div class="service">
 
-<span class="service-number">03 / POWER</span>
+<!-- PLUMBING VISUAL -->
 
-<h3>Power Points & Sockets</h3>
+<div class="visual-card">
+
+<img
+src="https://images.unsplash.com/photo-1585704032915-c3400ca199e7?auto=format&fit=crop&w=900&q=85"
+alt="Plumbing Works">
+
+<div class="visual-content">
+
+<span>
+02 / PLUMBING
+</span>
+
+<h3>
+Plumbing Changes
+</h3>
 
 <p>
-New power points, socket relocation and electrical
-point modifications based on your interior layout.
+Water, drainage and plumbing modifications
+for existing or new spaces.
 </p>
 
 </div>
 
+</div>
 
-<div class="service">
 
-<span class="service-number">04 / DB WORKS</span>
+<!-- FITOUT VISUAL -->
 
-<h3>Electrical Distribution Works</h3>
+<div class="visual-card">
+
+<img
+src="https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=900&q=85"
+alt="Kitchen MEP Works">
+
+<div class="visual-content">
+
+<span>
+03 / FIT-OUT SUPPORT
+</span>
+
+<h3>
+Kitchen & Interior MEP
+</h3>
 
 <p>
-Supporting electrical distribution and connection
-works required for interior modifications and fit-outs.
+Electrical and plumbing support
+for renovation and fit-out works.
 </p>
 
 </div>
 
-
-<div class="service">
-
-<span class="service-number">05 / PLUMBING</span>
-
-<h3>Plumbing Works</h3>
-
-<p>
-Plumbing installation, modifications and repair
-works for kitchens, washrooms and commercial spaces.
-</p>
-
 </div>
-
-
-<div class="service">
-
-<span class="service-number">06 / WATER</span>
-
-<h3>Water Supply Lines</h3>
-
-<p>
-Installation and modification of water supply
-connections according to the space requirement.
-</p>
-
-</div>
-
-
-<div class="service">
-
-<span class="service-number">07 / DRAINAGE</span>
-
-<h3>Drainage Works</h3>
-
-<p>
-Drainage connection, relocation and modification
-works for renovation and fit-out projects.
-</p>
-
-</div>
-
-
-<div class="service">
-
-<span class="service-number">08 / KITCHEN</span>
-
-<h3>Kitchen MEP Works</h3>
-
-<p>
-Electrical and plumbing modifications required
-for residential and commercial kitchen spaces.
-</p>
-
-</div>
-
-
-<div class="service">
-
-<span class="service-number">09 / WASHROOM</span>
-
-<h3>Washroom MEP Works</h3>
-
-<p>
-Supporting electrical and plumbing works for
-washroom renovation, modification and upgrades.
-</p>
-
-</div>
-
-
-<div class="service">
-
-<span class="service-number">10 / MODIFICATIONS</span>
-
-<h3>MEP Modifications</h3>
-
-<p>
-Changes to existing electrical and plumbing
-services during interior renovation and fit-out works.
-</p>
-
-</div>
-
-
-<div class="service">
-
-<span class="service-number">11 / REPAIR</span>
-
-<h3>Electrical & Plumbing Repairs</h3>
-
-<p>
-Practical repair solutions for common electrical
-and plumbing problems in existing spaces.
-</p>
-
-</div>
-
 
 </section>
 
@@ -548,77 +784,26 @@ WHERE WE WORK
 </div>
 
 <h2>
-MEP support for<br>
-different spaces.
+Different spaces.<br>
+Different requirements.
 </h2>
 
-
-<div class="application">
-
-<span>01 / HOME</span>
-
-<h3>Residential Spaces</h3>
-
 <p>
-Electrical and plumbing modifications for
-apartments, villas and residential interiors.
+MEP works can be carried out across
+residential and commercial spaces based
+on the actual project requirement.
 </p>
 
-</div>
+<div class="space-tags">
 
-
-<div class="application">
-
-<span>02 / OFFICE</span>
-
-<h3>Offices & Workspaces</h3>
-
-<p>
-Power, lighting and plumbing modifications
-supporting office fit-out requirements.
-</p>
-
-</div>
-
-
-<div class="application">
-
-<span>03 / RETAIL</span>
-
-<h3>Shops & Commercial Units</h3>
-
-<p>
-MEP works for new shops, renovations and
-commercial interior modifications.
-</p>
-
-</div>
-
-
-<div class="application">
-
-<span>04 / RESTAURANT</span>
-
-<h3>Restaurants & Kitchens</h3>
-
-<p>
-Electrical and plumbing works supporting
-restaurant and commercial kitchen fit-outs.
-</p>
-
-</div>
-
-
-<div class="application">
-
-<span>05 / CLINIC</span>
-
-<h3>Medical Clinics</h3>
-
-<p>
-MEP modifications supporting clinic interiors,
-consultation rooms and service areas.
-</p>
+<span>Homes & Villas</span>
+<span>Offices</span>
+<span>Shops</span>
+<span>Restaurants</span>
+<span>Kitchens</span>
+<span>Clinics</span>
+<span>Commercial Spaces</span>
+<span>And More</span>
 
 </div>
 
@@ -634,22 +819,26 @@ HOW WE WORK
 </div>
 
 <h2>
-Simple process.<br>
-Practical solution.
+Check first.<br>
+Then do it properly.
 </h2>
 
 
 <div class="step">
 
-<div class="step-number">01</div>
+<div class="step-number">
+01
+</div>
 
 <div>
 
-<h3>Understand</h3>
+<h3>
+Understand
+</h3>
 
 <p>
-We understand your space and the electrical
-or plumbing work required.
+Tell us the electrical or plumbing
+work your space requires.
 </p>
 
 </div>
@@ -659,15 +848,19 @@ or plumbing work required.
 
 <div class="step">
 
-<div class="step-number">02</div>
+<div class="step-number">
+02
+</div>
 
 <div>
 
-<h3>Check & Plan</h3>
+<h3>
+Check & Plan
+</h3>
 
 <p>
-Existing points and services are reviewed
-before planning the required modification.
+We review the existing points and services
+before planning the required work.
 </p>
 
 </div>
@@ -677,15 +870,19 @@ before planning the required modification.
 
 <div class="step">
 
-<div class="step-number">03</div>
+<div class="step-number">
+03
+</div>
 
 <div>
 
-<h3>Execute</h3>
+<h3>
+Execute
+</h3>
 
 <p>
-The required MEP works are completed with
-attention to functionality and finishing.
+The required MEP work is completed
+with attention to functionality and finish.
 </p>
 
 </div>
@@ -709,9 +906,9 @@ needs to be done.
 </h2>
 
 <p>
-From a small electrical or plumbing modification
-to supporting MEP works for your complete interior
-fit-out, contact S&S Middle East.
+Need one electrical point changed,
+a plumbing repair or MEP modifications
+for a larger fit-out? Talk to our team.
 </p>
 
 <div class="buttons">
@@ -744,12 +941,17 @@ S&S Middle East
 <p>
 Technical Services LLC<br>
 DIP - 1, Dubai - UAE<br>
+
 <a href="tel:+971552930619">
 +971 55 293 0619
-</a><br>
+</a>
+
+<br>
+
 <a href="mailto:ssmiddleeastllc@gmail.com">
 ssmiddleeastllc@gmail.com
 </a>
+
 </p>
 
 </footer>
