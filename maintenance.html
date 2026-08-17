@@ -1,1 +1,895 @@
-<!doctype html><html><head><meta name="viewport" content="width=device-width,initial-scale=1"><title>Maintenance & Repair</title><link rel="stylesheet" href="style.css"></head><body><section class="cta" style="min-height:100vh"><p>S&S MIDDLE EAST</p><h2>Maintenance & Repair</h2><p style="color:#ccd3da;max-width:600px">Dedicated service page — next we can build this with project photos, service details and enquiry options.</p><a href="index.html">← Back Home</a></section></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Maintenance & Repair | S&S Middle East</title>
+
+<style>
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  background:#f4f2ed;
+  color:#102333;
+}
+
+/* HERO */
+
+.hero{
+  min-height:86vh;
+  position:relative;
+  display:flex;
+  align-items:flex-end;
+  padding:38px 26px 52px;
+  color:#fff;
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(7,20,31,.10),
+      rgba(7,20,31,.92)
+    ),
+    url("https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1000&q=88");
+
+  background-size:cover;
+  background-position:center;
+}
+
+.back{
+  position:absolute;
+  top:28px;
+  left:25px;
+  color:#fff;
+  text-decoration:none;
+  font-size:14px;
+  letter-spacing:1px;
+}
+
+.hero-content{
+  max-width:620px;
+}
+
+.number{
+  color:#f47721;
+  font-size:13px;
+  font-weight:bold;
+  letter-spacing:2px;
+  margin-bottom:16px;
+}
+
+.hero h1{
+  font-size:50px;
+  line-height:.97;
+  letter-spacing:-2px;
+  margin-bottom:22px;
+}
+
+.hero p{
+  color:#e5e9eb;
+  font-size:18px;
+  line-height:1.6;
+}
+
+/* INTRO */
+
+.intro{
+  padding:75px 26px 60px;
+}
+
+.label{
+  color:#c96827;
+  font-size:12px;
+  font-weight:bold;
+  letter-spacing:4px;
+  margin-bottom:23px;
+}
+
+.intro h2{
+  font-size:41px;
+  line-height:1.07;
+  letter-spacing:-1.4px;
+  margin-bottom:25px;
+}
+
+.intro p{
+  color:#68727a;
+  font-size:17px;
+  line-height:1.75;
+}
+
+/* QUICK MESSAGE */
+
+.quick{
+  margin:0 18px 65px;
+  background:#f47721;
+  color:#fff;
+  padding:40px 25px;
+}
+
+.quick span{
+  display:block;
+  font-size:11px;
+  font-weight:bold;
+  letter-spacing:3px;
+  margin-bottom:18px;
+  color:#fff4eb;
+}
+
+.quick h2{
+  font-size:34px;
+  line-height:1.08;
+  margin-bottom:17px;
+}
+
+.quick p{
+  font-size:16px;
+  line-height:1.65;
+  color:#fff5ef;
+}
+
+/* SERVICES */
+
+.services{
+  padding:0 26px 75px;
+}
+
+.services-head{
+  margin-bottom:28px;
+}
+
+.services-head h2{
+  font-size:38px;
+  line-height:1.08;
+  margin-top:10px;
+}
+
+.service{
+  padding:29px 0;
+  border-top:1px solid #d6d3cd;
+}
+
+.service:last-child{
+  border-bottom:1px solid #d6d3cd;
+}
+
+.service-number{
+  color:#d56e28;
+  font-size:11px;
+  font-weight:bold;
+  letter-spacing:2px;
+}
+
+.service h3{
+  font-size:26px;
+  font-weight:500;
+  line-height:1.2;
+  margin:9px 0 10px;
+}
+
+.service p{
+  color:#717a81;
+  font-size:15px;
+  line-height:1.6;
+}
+
+/* DARK SUPPORT SECTION */
+
+.support{
+  background:#102333;
+  color:#fff;
+  padding:70px 26px;
+}
+
+.support .label{
+  color:#f47721;
+}
+
+.support h2{
+  font-size:39px;
+  line-height:1.08;
+  margin-bottom:20px;
+}
+
+.support > p{
+  color:#aeb8bf;
+  font-size:16px;
+  line-height:1.65;
+  margin-bottom:38px;
+}
+
+.support-item{
+  padding:25px 0;
+  border-top:1px solid rgba(255,255,255,.17);
+}
+
+.support-item span{
+  color:#f47721;
+  font-size:11px;
+  letter-spacing:2px;
+}
+
+.support-item h3{
+  font-size:22px;
+  margin:8px 0;
+}
+
+.support-item p{
+  color:#aeb8bf;
+  font-size:15px;
+  line-height:1.6;
+}
+
+/* PROCESS */
+
+.process{
+  background:#fff;
+  padding:75px 26px;
+}
+
+.process h2{
+  font-size:39px;
+  line-height:1.07;
+  margin-bottom:40px;
+}
+
+.step{
+  display:flex;
+  gap:18px;
+  padding:25px 0;
+  border-top:1px solid #ddd9d2;
+}
+
+.step-number{
+  color:#f47721;
+  font-size:12px;
+  min-width:27px;
+  padding-top:4px;
+}
+
+.step h3{
+  font-size:23px;
+  margin-bottom:7px;
+}
+
+.step p{
+  color:#717a81;
+  font-size:15px;
+  line-height:1.6;
+}
+
+/* CTA */
+
+.cta{
+  background:#f4f2ed;
+  padding:75px 26px;
+}
+
+.cta h2{
+  font-size:42px;
+  line-height:1.05;
+  margin-bottom:20px;
+}
+
+.cta p{
+  color:#68727a;
+  font-size:17px;
+  line-height:1.65;
+  margin-bottom:32px;
+}
+
+.buttons{
+  display:flex;
+  gap:10px;
+}
+
+.btn{
+  display:inline-block;
+  padding:17px 20px;
+  text-decoration:none;
+  font-size:14px;
+  font-weight:bold;
+}
+
+.primary{
+  background:#f47721;
+  color:#fff;
+}
+
+.secondary{
+  border:1px solid #102333;
+  color:#102333;
+}
+
+/* FOOTER */
+
+.footer{
+  background:#0b1923;
+  color:#fff;
+  padding:36px 26px;
+}
+
+.footer strong{
+  display:block;
+  font-size:20px;
+  margin-bottom:9px;
+}
+
+.footer p{
+  color:#98a6ae;
+  font-size:14px;
+  line-height:1.65;
+}
+
+.footer a{
+  color:#98a6ae;
+  text-decoration:none;
+}
+
+/* MOBILE */
+
+@media(max-width:380px){
+
+  .hero h1{
+    font-size:43px;
+  }
+
+  .intro h2,
+  .services-head h2,
+  .process h2{
+    font-size:35px;
+  }
+
+  .support h2,
+  .cta h2{
+    font-size:36px;
+  }
+
+  .quick h2{
+    font-size:31px;
+  }
+
+  .buttons{
+    flex-direction:column;
+  }
+
+  .btn{
+    text-align:center;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+<a class="back" href="index.html">← BACK</a>
+
+<div class="hero-content">
+
+<div class="number">
+06 / MAINTENANCE & REPAIR
+</div>
+
+<h1>
+Small problems.<br>
+Proper solutions.
+</h1>
+
+<p>
+Practical maintenance, repair and small modification
+works for homes and commercial spaces.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- INTRO -->
+
+<section class="intro">
+
+<div class="label">
+EVERYDAY TECHNICAL SUPPORT
+</div>
+
+<h2>
+The small works<br>
+still matter.
+</h2>
+
+<p>
+Not every job needs to be a complete renovation.
+Sometimes you need a repair, a small modification,
+a replacement or simply someone to fix what is
+not working properly.
+<br><br>
+S&S Middle East provides practical maintenance
+support for residential and commercial properties
+across a wide range of everyday requirements.
+</p>
+
+</section>
+
+
+<!-- QUICK MESSAGE -->
+
+<section class="quick">
+
+<span>SMALL JOB? NO PROBLEM.</span>
+
+<h2>
+Tell us what<br>
+needs fixing.
+</h2>
+
+<p>
+From a single repair to multiple maintenance
+items in the same property, our team can help
+with the work your space actually needs.
+</p>
+
+</section>
+
+
+<!-- SERVICES -->
+
+<section class="services">
+
+<div class="services-head">
+
+<div class="label">
+MAINTENANCE SERVICES
+</div>
+
+<h2>
+Repair. Maintain.<br>
+Improve.
+</h2>
+
+</div>
+
+
+<div class="service">
+
+<span class="service-number">
+01 / GENERAL
+</span>
+
+<h3>General Maintenance & Repair</h3>
+
+<p>
+Practical maintenance and repair solutions
+for common issues in homes, offices, shops
+and commercial properties.
+</p>
+
+</div>
+
+
+<div class="service">
+
+<span class="service-number">
+02 / ELECTRICAL
+</span>
+
+<h3>Electrical Repairs</h3>
+
+<p>
+Repair and replacement of switches, sockets,
+lighting points and other common electrical
+items within the property.
+</p>
+
+</div>
+
+
+<div class="service">
+
+<span class="service-number">
+03 / PLUMBING
+</span>
+
+<h3>Plumbing Repairs</h3>
+
+<p>
+Support for leaking fixtures, plumbing points,
+water connections and common kitchen or
+washroom plumbing issues.
+</p>
+
+</div>
+
+
+<div class="service">
+
+<span class="service-number">
+04 / AC
+</span>
+
+<h3>AC Maintenance & Minor Repairs</h3>
+
+<p>
+Routine AC maintenance, inspection and minor
+repair works to help keep your air-conditioning
+system operating properly.
+</p>
+
+</div>
+
+
+<div class="service">
+
+<span class="service-number">
+05 / PAINTING
+</span>
+
+<h3>Painting & Touch-Up Works</h3>
+
+<p>
+Wall repainting, touch-ups and small painting
+works after repairs, modifications or everyday
+wear and tear.
+</p>
+
+</div>
+
+
+<div class="service">
+
+<span class="service-number">
+06 / GYPSUM
+</span>
+
+<h3>Gypsum & Ceiling Repairs</h3>
+
+<p>
+Repair and modification of gypsum partitions,
+false ceilings and damaged interior sections.
+</p>
+
+</div>
+
+
+<div class="service">
+
+<span class="service-number">
+07 / CARPENTRY
+</span>
+
+<h3>Carpentry & Joinery Repairs</h3>
+
+<p>
+Minor repair and adjustment works for doors,
+cabinets, counters, shelves and other
+interior joinery elements.
+</p>
+
+</div>
+
+
+<div class="service">
+
+<span class="service-number">
+08 / DOORS
+</span>
+
+<h3>Door, Lock & Hardware Works</h3>
+
+<p>
+Adjustment, repair and replacement of doors,
+handles, locks, hinges and related hardware.
+</p>
+
+</div>
+
+
+<div class="service">
+
+<span class="service-number">
+09 / FLOORING
+</span>
+
+<h3>Tile & Flooring Repairs</h3>
+
+<p>
+Small tile replacement, flooring repairs
+and correction works for damaged interior areas.
+</p>
+
+</div>
+
+
+<div class="service">
+
+<span class="service-number">
+10 / GLASS
+</span>
+
+<h3>Glass & Partition Repairs</h3>
+
+<p>
+Minor repair and modification works for
+glass sections and interior partitions.
+</p>
+
+</div>
+
+
+<div class="service">
+
+<span class="service-number">
+11 / MODIFICATIONS
+</span>
+
+<h3>Small Property Modifications</h3>
+
+<p>
+Practical changes to existing spaces including
+minor interior, electrical, plumbing and
+finishing modifications.
+</p>
+
+</div>
+
+
+<div class="service">
+
+<span class="service-number">
+12 / PREVENTIVE
+</span>
+
+<h3>Routine Maintenance</h3>
+
+<p>
+Regular inspection and maintenance support
+to identify and handle small property issues
+before they become larger problems.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- SUPPORT -->
+
+<section class="support">
+
+<div class="label">
+WHERE WE CAN HELP
+</div>
+
+<h2>
+Maintenance for<br>
+different spaces.
+</h2>
+
+<p>
+Our maintenance work can be adjusted around
+the property, the problem and the amount of
+work required.
+</p>
+
+
+<div class="support-item">
+
+<span>01 / RESIDENTIAL</span>
+
+<h3>Apartments & Villas</h3>
+
+<p>
+Everyday maintenance, repairs and small
+improvements for residential properties.
+</p>
+
+</div>
+
+
+<div class="support-item">
+
+<span>02 / WORKSPACE</span>
+
+<h3>Offices & Workspaces</h3>
+
+<p>
+Technical repairs and maintenance support
+to keep working environments functional.
+</p>
+
+</div>
+
+
+<div class="support-item">
+
+<span>03 / COMMERCIAL</span>
+
+<h3>Shops & Commercial Spaces</h3>
+
+<p>
+Repair and maintenance works for retail,
+service and other commercial units.
+</p>
+
+</div>
+
+
+<div class="support-item">
+
+<span>04 / HOSPITALITY</span>
+
+<h3>Restaurants & Cafés</h3>
+
+<p>
+Maintenance and technical support for
+customer areas, kitchens and service spaces.
+</p>
+
+</div>
+
+
+<div class="support-item">
+
+<span>05 / OTHER SPACES</span>
+
+<h3>Have Something Different?</h3>
+
+<p>
+Tell us about the issue or modification you need.
+We can review the requirement and advise on
+the suitable work.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- PROCESS -->
+
+<section class="process">
+
+<div class="label">
+HOW IT WORKS
+</div>
+
+<h2>
+Simple from<br>
+start to finish.
+</h2>
+
+
+<div class="step">
+
+<div class="step-number">01</div>
+
+<div>
+
+<h3>Tell Us the Problem</h3>
+
+<p>
+Share the issue, required work or photos
+of the area that needs attention.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="step">
+
+<div class="step-number">02</div>
+
+<div>
+
+<h3>We Check the Requirement</h3>
+
+<p>
+We understand what needs to be repaired,
+replaced or modified before starting the work.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="step">
+
+<div class="step-number">03</div>
+
+<div>
+
+<h3>Get It Done</h3>
+
+<p>
+Our team carries out the required maintenance
+or repair with attention to functionality
+and finishing.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CTA -->
+
+<section class="cta">
+
+<div class="label">
+NEED SOMETHING FIXED?
+</div>
+
+<h2>
+Send us the<br>
+details.
+</h2>
+
+<p>
+Have a repair, maintenance issue or small
+modification? Send us the requirement or
+photos of the problem and our team can help.
+</p>
+
+<div class="buttons">
+
+<a
+class="btn primary"
+href="https://wa.me/971552930619">
+WhatsApp Us
+</a>
+
+<a
+class="btn secondary"
+href="tel:+971552930619">
+Call Us
+</a>
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+<strong>
+S&S Middle East
+</strong>
+
+<p>
+Technical Services LLC<br>
+DIP - 1, Dubai - UAE<br>
+
+<a href="tel:+971552930619">
++971 55 293 0619
+</a>
+<br>
+
+<a href="mailto:ssmiddleeastllc@gmail.com">
+ssmiddleeastllc@gmail.com
+</a>
+
+</p>
+
+</footer>
+
+
+</body>
+</html>
