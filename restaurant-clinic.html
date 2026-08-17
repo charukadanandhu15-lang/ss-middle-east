@@ -22,17 +22,17 @@ body{
 /* HERO */
 
 .hero{
-  min-height:84vh;
+  min-height:82vh;
   position:relative;
   display:flex;
   align-items:flex-end;
-  padding:38px 25px 52px;
+  padding:38px 25px 50px;
   color:#fff;
 
   background:
     linear-gradient(
       to bottom,
-      rgba(7,20,31,.12),
+      rgba(7,20,31,.10),
       rgba(7,20,31,.88)
     ),
     url("https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1000&q=88");
@@ -47,102 +47,110 @@ body{
   left:25px;
   color:#fff;
   text-decoration:none;
-  font-size:14px;
+  font-size:13px;
   letter-spacing:1px;
 }
 
 .number{
   color:#f47721;
-  font-size:13px;
+  font-size:12px;
   font-weight:bold;
   letter-spacing:2px;
-  margin-bottom:15px;
+  margin-bottom:14px;
 }
 
 .hero h1{
   font-size:50px;
   line-height:.96;
   letter-spacing:-2px;
-  margin-bottom:22px;
+  margin-bottom:20px;
 }
 
 .hero p{
+  max-width:480px;
   font-size:18px;
-  line-height:1.6;
-  color:#e7e7e7;
-  max-width:520px;
+  line-height:1.55;
+  color:#e4e7e9;
 }
 
 
 /* INTRO */
 
 .intro{
-  padding:75px 25px 58px;
+  padding:62px 25px 50px;
 }
 
 .label{
-  color:#c96827;
-  font-size:12px;
+  color:#d36e29;
+  font-size:11px;
   letter-spacing:4px;
   font-weight:bold;
-  margin-bottom:22px;
+  margin-bottom:19px;
 }
 
 .intro h2{
-  font-size:41px;
-  line-height:1.06;
+  font-size:40px;
+  line-height:1.05;
   letter-spacing:-1.5px;
-  margin-bottom:24px;
+  margin-bottom:21px;
 }
 
 .intro p{
+  max-width:520px;
   color:#69727a;
-  font-size:17px;
-  line-height:1.75;
+  font-size:16px;
+  line-height:1.7;
 }
 
 
-/* VISUAL EXAMPLES */
+/* EXAMPLES */
 
 .examples{
-  padding:15px 18px 75px;
+  padding:12px 18px 70px;
 }
 
 .section-head{
-  padding:0 7px 30px;
+  padding:0 7px 28px;
 }
 
 .section-head span{
-  color:#f47721;
-  font-size:12px;
+  color:#d36e29;
+  font-size:11px;
   font-weight:bold;
   letter-spacing:3px;
 }
 
 .section-head h2{
   font-size:34px;
-  line-height:1.08;
-  margin-top:9px;
+  line-height:1.07;
+  margin-top:10px;
+  margin-bottom:12px;
 }
 
 .section-head p{
   color:#747d83;
   font-size:15px;
   line-height:1.6;
-  margin-top:13px;
 }
 
 
-/* CARDS */
+/* VISUAL CARDS */
 
 .card{
   position:relative;
-  height:390px;
-  margin-bottom:16px;
+  height:380px;
+  margin-bottom:15px;
   overflow:hidden;
   color:#fff;
-  display:block;
   background:#102333;
+}
+
+.card.large{
+  height:430px;
+}
+
+.card.compact{
+  height:340px;
 }
 
 .card img{
@@ -150,6 +158,7 @@ body{
   height:100%;
   object-fit:cover;
   display:block;
+  transition:transform .5s ease;
 }
 
 .card::after{
@@ -159,23 +168,23 @@ body{
   background:
     linear-gradient(
       to bottom,
-      rgba(7,20,31,.03) 25%,
-      rgba(7,20,31,.90) 100%
+      rgba(7,20,31,.02) 28%,
+      rgba(7,20,31,.92) 100%
     );
 }
 
 .card-content{
   position:absolute;
   z-index:2;
-  left:24px;
-  right:24px;
-  bottom:25px;
+  left:23px;
+  right:23px;
+  bottom:24px;
 }
 
 .card-number{
   display:block;
   color:#f47721;
-  font-size:11px;
+  font-size:10px;
   font-weight:bold;
   letter-spacing:2px;
   margin-bottom:8px;
@@ -183,114 +192,167 @@ body{
 
 .card h3{
   font-size:27px;
+  line-height:1.1;
   margin-bottom:8px;
 }
 
 .card p{
+  max-width:290px;
   color:#dce1e4;
   font-size:14px;
-  line-height:1.55;
-  max-width:310px;
+  line-height:1.5;
 }
 
 
-/* DARK SECTION */
+/* OTHER COMMERCIAL CARD */
 
-.flexible{
+.other-card{
+  position:relative;
+  min-height:300px;
+  margin-top:16px;
+  padding:34px 25px;
   background:#102333;
   color:#fff;
-  padding:70px 25px;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
 }
 
-.flexible .label{
-  color:#f47721;
-}
-
-.flexible h2{
-  font-size:39px;
-  line-height:1.07;
-  margin-bottom:20px;
-}
-
-.flexible > p{
-  color:#aeb8bf;
-  font-size:17px;
-  line-height:1.65;
-  margin-bottom:40px;
-}
-
-.flex-item{
-  padding:24px 0;
-  border-top:1px solid rgba(255,255,255,.17);
-}
-
-.flex-item span{
+.other-card .top{
   color:#f47721;
   font-size:11px;
-  letter-spacing:2px;
+  font-weight:bold;
+  letter-spacing:3px;
 }
 
-.flex-item h3{
-  margin:8px 0 7px;
-  font-size:23px;
+.other-card h3{
+  font-size:35px;
+  line-height:1.05;
+  margin-bottom:16px;
 }
 
-.flex-item p{
-  color:#aeb8bf;
+.other-card p{
+  max-width:310px;
+  color:#b6c0c7;
   font-size:15px;
   line-height:1.6;
 }
 
+.other-arrow{
+  position:absolute;
+  right:25px;
+  top:28px;
+  color:#f47721;
+  font-size:32px;
+}
 
-/* SIMPLE STATEMENT */
+
+/* PROJECT SCALE */
+
+.scale{
+  background:#102333;
+  color:#fff;
+  padding:72px 25px;
+}
+
+.scale .label{
+  color:#f47721;
+}
+
+.scale h2{
+  max-width:500px;
+  font-size:41px;
+  line-height:1.05;
+  letter-spacing:-1px;
+  margin-bottom:23px;
+}
+
+.scale p{
+  max-width:500px;
+  color:#aeb8bf;
+  font-size:16px;
+  line-height:1.7;
+}
+
+.scale-line{
+  width:55px;
+  height:3px;
+  background:#f47721;
+  margin:30px 0;
+}
+
+.scale-note{
+  color:#fff !important;
+  font-size:18px !important;
+  line-height:1.55 !important;
+}
+
+
+/* SIMPLE MESSAGE */
 
 .statement{
   background:#fff;
-  padding:75px 25px;
+  padding:68px 25px;
 }
 
-.statement .big{
+.statement .label{
+  margin-bottom:20px;
+}
+
+.statement h2{
   font-size:39px;
-  line-height:1.08;
+  line-height:1.07;
   letter-spacing:-1px;
-  margin-bottom:25px;
+  margin-bottom:22px;
 }
 
 .statement p{
   color:#69727a;
-  font-size:17px;
+  font-size:16px;
   line-height:1.7;
-}
-
-.statement-line{
-  width:55px;
-  height:3px;
-  background:#f47721;
-  margin-bottom:28px;
 }
 
 
 /* CTA */
 
 .cta{
+  position:relative;
+  overflow:hidden;
   background:#f4f2ed;
-  padding:75px 25px;
+  padding:72px 25px 78px;
+}
+
+.cta::before{
+  content:"";
+  position:absolute;
+  width:140px;
+  height:140px;
+  border:1px solid rgba(244,119,33,.18);
+  border-radius:50%;
+  right:-65px;
+  top:30px;
 }
 
 .cta h2{
+  position:relative;
   font-size:42px;
-  line-height:1.05;
+  line-height:1.04;
+  letter-spacing:-1px;
   margin-bottom:20px;
 }
 
 .cta p{
+  position:relative;
+  max-width:470px;
   color:#68727a;
-  font-size:17px;
+  font-size:16px;
   line-height:1.65;
-  margin-bottom:30px;
+  margin-bottom:31px;
 }
 
 .buttons{
+  position:relative;
   display:flex;
   gap:10px;
 }
@@ -339,28 +401,44 @@ body{
 
 @media(max-width:380px){
 
+  .hero{
+    min-height:80vh;
+  }
+
   .hero h1{
     font-size:43px;
   }
 
   .intro h2{
-    font-size:37px;
+    font-size:36px;
   }
 
   .section-head h2{
     font-size:31px;
   }
 
+  .card.large{
+    height:390px;
+  }
+
   .card{
-    height:360px;
+    height:350px;
+  }
+
+  .card.compact{
+    height:315px;
   }
 
   .card h3{
-    font-size:25px;
+    font-size:24px;
   }
 
-  .flexible h2,
-  .statement .big{
+  .other-card h3{
+    font-size:31px;
+  }
+
+  .scale h2,
+  .statement h2{
     font-size:35px;
   }
 
@@ -413,7 +491,7 @@ for a wide range of commercial spaces.
 </section>
 
 
-<!-- INTRO -->
+<!-- COMPACT INTRO -->
 
 <section class="intro">
 
@@ -427,13 +505,9 @@ uses space differently.
 </h2>
 
 <p>
-No two commercial spaces have exactly the
-same requirements.
-<br><br>
-We work around your available space,
-business needs and daily operations to create
-practical solutions — whether you are starting
-something new or improving what you already have.
+Every commercial space has different needs.
+We create practical solutions around your space,
+business and daily operations.
 </p>
 
 </section>
@@ -445,7 +519,9 @@ something new or improving what you already have.
 
 <div class="section-head">
 
-<span>EXAMPLES OF SPACES</span>
+<span>
+EXAMPLES OF SPACES
+</span>
 
 <h2>
 Different businesses.<br>
@@ -453,16 +529,16 @@ Different spaces.
 </h2>
 
 <p>
-A few examples of the commercial environments
-we can work with — and not a limit on what we do.
+A few examples of spaces we can work with —
+not a limit on what we do.
 </p>
 
 </div>
 
 
-<!-- RESTAURANT -->
+<!-- HOSPITALITY -->
 
-<div class="card">
+<div class="card large">
 
 <img
 src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=85"
@@ -479,8 +555,7 @@ Restaurant & Hospitality
 </h3>
 
 <p>
-Practical spaces for dining,
-food service and hospitality businesses.
+Dining, food service and hospitality spaces.
 </p>
 
 </div>
@@ -488,7 +563,7 @@ food service and hospitality businesses.
 </div>
 
 
-<!-- CLINIC -->
+<!-- HEALTHCARE -->
 
 <div class="card">
 
@@ -507,8 +582,8 @@ Clinic & Healthcare
 </h3>
 
 <p>
-Professional spaces designed around
-staff, visitors and daily operations.
+Professional spaces for staff,
+visitors and daily operations.
 </p>
 
 </div>
@@ -518,7 +593,7 @@ staff, visitors and daily operations.
 
 <!-- RETAIL -->
 
-<div class="card">
+<div class="card compact">
 
 <img
 src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=900&q=85"
@@ -535,8 +610,7 @@ Retail & Showroom
 </h3>
 
 <p>
-Customer-facing commercial spaces
-for products, services and sales.
+Customer-facing spaces built around your business.
 </p>
 
 </div>
@@ -563,8 +637,7 @@ Office & Workspace
 </h3>
 
 <p>
-Functional spaces for teams,
-clients and everyday business activity.
+Functional environments for teams and clients.
 </p>
 
 </div>
@@ -572,27 +645,29 @@ clients and everyday business activity.
 </div>
 
 
-<!-- OTHER -->
+<!-- OTHER COMMERCIAL -->
 
-<div class="card">
+<div class="other-card">
 
-<img
-src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=900&q=85"
-alt="Other Commercial Spaces">
-
-<div class="card-content">
-
-<span class="card-number">
-05 / AND MORE
+<span class="other-arrow">
+→
 </span>
 
+<div class="top">
+05 / AND MORE
+</div>
+
+<div>
+
 <h3>
-Other Commercial Spaces
+Have a different<br>
+type of space?
 </h3>
 
 <p>
-Have a different type of business?
-Tell us about your space and what you need.
+These are only examples.
+Whatever your business, tell us about
+your space and what you need.
 </p>
 
 </div>
@@ -602,77 +677,39 @@ Tell us about your space and what you need.
 </section>
 
 
-<!-- FLEXIBLE PROJECTS -->
+<!-- PROJECT SCALE -->
 
-<section class="flexible">
+<section class="scale">
 
 <div class="label">
-FLEXIBLE PROJECT SCOPE
+BUILT AROUND YOUR REQUIREMENT
 </div>
 
 <h2>
-Small change<br>
-or complete space.
+Small change.<br>
+Complete space.<br>
+Anything in between.
 </h2>
 
-<p>
-Commercial work does not always mean
-a large project. The scope can be based
-on exactly what your business requires.
-</p>
-
-
-<div class="flex-item">
-
-<span>01 / MODIFY</span>
-
-<h3>
-Small Modifications
-</h3>
+<div class="scale-line"></div>
 
 <p>
-Change or improve a selected part
-of an existing commercial space.
+Not every commercial project needs to be large.
+We can work around the actual scope your
+space requires.
 </p>
 
-</div>
+<br>
 
-
-<div class="flex-item">
-
-<span>02 / IMPROVE</span>
-
-<h3>
-Renovation & Upgrades
-</h3>
-
-<p>
-Refresh and improve existing spaces
-with practical modifications.
+<p class="scale-note">
+Modify an existing area, upgrade your space
+or prepare something new.
 </p>
-
-</div>
-
-
-<div class="flex-item">
-
-<span>03 / CREATE</span>
-
-<h3>
-New Space Setup
-</h3>
-
-<p>
-Prepare a new commercial space
-around your business requirements.
-</p>
-
-</div>
 
 </section>
 
 
-<!-- BROAD BUSINESS MESSAGE -->
+<!-- STATEMENT -->
 
 <section class="statement">
 
@@ -680,20 +717,15 @@ around your business requirements.
 YOUR BUSINESS. YOUR SPACE.
 </div>
 
-<div class="statement-line"></div>
-
-<h2 class="big">
-Not on the list?<br>
-That’s okay.
+<h2>
+Tell us what<br>
+needs to change.
 </h2>
 
 <p>
-The examples above are only a few types of
-commercial spaces.
-<br><br>
-Whatever your business, share your requirement
-with us and we can look at the space and
-the work that needs to be done.
+Share your space and requirement with us.
+We can look at what needs to be done and
+help plan the right way forward.
 </p>
 
 </section>
@@ -708,14 +740,14 @@ START YOUR PROJECT
 </div>
 
 <h2>
-Have a commercial<br>
-space that needs work?
+Tell us about<br>
+your space.
 </h2>
 
 <p>
-Tell us about your space and what you need.
-From a small modification to a complete setup,
-our team is ready to help.
+From a small commercial modification
+to a complete new setup, talk to our team
+about what your business needs.
 </p>
 
 <div class="buttons">
@@ -723,7 +755,7 @@ our team is ready to help.
 <a
 class="btn primary"
 href="https://wa.me/971552930619">
-WhatsApp Us
+WhatsApp Us →
 </a>
 
 <a
