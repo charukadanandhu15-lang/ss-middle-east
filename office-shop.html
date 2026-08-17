@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,10 +33,10 @@ body{
   background:
     linear-gradient(
       to bottom,
-      rgba(7,20,31,.16),
-      rgba(7,20,31,.86)
+      rgba(7,20,31,.14),
+      rgba(7,20,31,.88)
     ),
-    url("https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=900&q=88");
+    url("https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1000&q=88");
 
   background-size:cover;
   background-position:center;
@@ -57,6 +58,7 @@ body{
 
 .number{
   color:#f47721;
+  font-size:13px;
   font-weight:bold;
   letter-spacing:2px;
   margin-bottom:15px;
@@ -75,6 +77,7 @@ body{
   color:#e7e7e7;
 }
 
+
 /* INTRO */
 
 .intro{
@@ -83,7 +86,7 @@ body{
 
 .label{
   color:#c96827;
-  font-size:13px;
+  font-size:12px;
   letter-spacing:4px;
   font-weight:bold;
   margin-bottom:24px;
@@ -102,32 +105,55 @@ body{
   line-height:1.7;
 }
 
-/* SERVICES */
 
-.services{
-  padding:10px 28px 70px;
+/* COMMERCIAL SPACE TYPES */
+
+.spaces{
+  padding:10px 28px 75px;
 }
 
-.service{
-  padding:27px 0;
+.space{
+  display:block;
+  position:relative;
+  padding:29px 40px 29px 0;
   border-top:1px solid #d8d8d4;
+  text-decoration:none;
+  color:#102333;
 }
 
-.service:last-child{
+.space:last-child{
   border-bottom:1px solid #d8d8d4;
 }
 
-.service span{
+.space span{
   color:#d56e28;
-  font-size:12px;
+  font-size:11px;
+  font-weight:bold;
   letter-spacing:2px;
 }
 
-.service h3{
-  margin-top:8px;
+.space h3{
+  margin:9px 0 8px;
   font-size:26px;
   font-weight:500;
 }
+
+.space p{
+  color:#747d83;
+  font-size:15px;
+  line-height:1.55;
+}
+
+.space::after{
+  content:"→";
+  position:absolute;
+  right:2px;
+  top:50%;
+  transform:translateY(-50%);
+  color:#f47721;
+  font-size:24px;
+}
+
 
 /* DARK SECTION */
 
@@ -161,19 +187,64 @@ body{
 
 .item span{
   color:#f47721;
-  font-size:12px;
+  font-size:11px;
   letter-spacing:2px;
 }
 
 .item h3{
-  font-size:24px;
+  font-size:23px;
   margin:8px 0 7px;
 }
 
 .item p{
   color:#aeb8bf;
-  line-height:1.55;
+  font-size:15px;
+  line-height:1.6;
 }
+
+
+/* RELATED SERVICES */
+
+.related{
+  padding:75px 28px;
+  background:#fff;
+}
+
+.related h2{
+  font-size:39px;
+  line-height:1.07;
+  margin-bottom:20px;
+}
+
+.related > p{
+  color:#69727a;
+  font-size:17px;
+  line-height:1.65;
+  margin-bottom:35px;
+}
+
+.related-list{
+  border-top:1px solid #d8d8d4;
+}
+
+.related-item{
+  padding:18px 0;
+  border-bottom:1px solid #d8d8d4;
+  font-size:18px;
+}
+
+.explore{
+  display:inline-block;
+  margin-top:32px;
+  color:#102333;
+  text-decoration:none;
+  font-size:14px;
+  font-weight:bold;
+  letter-spacing:.5px;
+  border-bottom:2px solid #f47721;
+  padding-bottom:5px;
+}
+
 
 /* CTA */
 
@@ -218,6 +289,7 @@ body{
   color:#102333;
 }
 
+
 /* FOOTER */
 
 .footer{
@@ -238,6 +310,7 @@ body{
   line-height:1.6;
 }
 
+
 /* SMALL MOBILE */
 
 @media(max-width:380px){
@@ -251,8 +324,13 @@ body{
     font-size:37px;
   }
 
-  .business h2{
-    font-size:36px;
+  .business h2,
+  .related h2{
+    font-size:35px;
+  }
+
+  .space h3{
+    font-size:24px;
   }
 
   .buttons{
@@ -267,7 +345,9 @@ body{
 </style>
 </head>
 
+
 <body>
+
 
 <!-- HERO -->
 
@@ -287,11 +367,12 @@ for business.
 </h1>
 
 <p>
-Practical fit-out and modification solutions
-for offices, shops and commercial spaces.
+Practical commercial interiors for offices,
+shops and everyday business spaces.
 </p>
 
 </div>
+
 </section>
 
 
@@ -299,7 +380,9 @@ for offices, shops and commercial spaces.
 
 <section class="intro">
 
-<div class="label">WHAT WE DO</div>
+<div class="label">
+COMMERCIAL SPACES
+</div>
 
 <h2>
 Make your space<br>
@@ -307,47 +390,104 @@ work for your business.
 </h2>
 
 <p>
-From office improvements to complete shop fit-outs,
-S&S Middle East helps create practical, professional
-spaces designed around your business requirements.
+Whether you are setting up a new office,
+improving an existing workspace or preparing
+a shop for business, S&S Middle East provides
+practical fit-out solutions around the way
+your space needs to work.
 </p>
 
 </section>
 
 
-<!-- SERVICES -->
+<!-- SPACE TYPES -->
 
-<section class="services">
+<section class="spaces">
 
-<div class="service">
-<span>01</span>
+
+<a href="office-fitout.html" class="space">
+
+<span>01 / OFFICE</span>
+
 <h3>Office Fit-Out</h3>
-</div>
 
-<div class="service">
-<span>02</span>
-<h3>Shop Fit-Out</h3>
-</div>
+<p>
+Practical office interiors and modifications
+for new and existing workplaces.
+</p>
 
-<div class="service">
-<span>03</span>
-<h3>Partitions & Ceilings</h3>
-</div>
+</a>
 
-<div class="service">
-<span>04</span>
-<h3>Flooring Works</h3>
-</div>
 
-<div class="service">
-<span>05</span>
-<h3>Painting & Finishing</h3>
-</div>
+<a href="shop-fitout.html" class="space">
 
-<div class="service">
-<span>06</span>
-<h3>Interior Modifications</h3>
-</div>
+<span>02 / RETAIL</span>
+
+<h3>Shop & Retail Fit-Out</h3>
+
+<p>
+Interior solutions for shops, retail units
+and customer-facing commercial spaces.
+</p>
+
+</a>
+
+
+<a href="manager-room.html" class="space">
+
+<span>03 / EXECUTIVE</span>
+
+<h3>Manager & Executive Rooms</h3>
+
+<p>
+Professional private offices, manager cabins
+and executive workspaces.
+</p>
+
+</a>
+
+
+<a href="office-workarea.html" class="space">
+
+<span>04 / WORKSPACE</span>
+
+<h3>Office Work Areas</h3>
+
+<p>
+Functional work areas designed around
+teams, desks and daily operations.
+</p>
+
+</a>
+
+
+<a href="reception.html" class="space">
+
+<span>05 / FRONT OF HOUSE</span>
+
+<h3>Reception & Waiting Areas</h3>
+
+<p>
+Clean and welcoming entrance spaces
+for clients, visitors and staff.
+</p>
+
+</a>
+
+
+<a href="retail-display.html" class="space">
+
+<span>06 / DISPLAY</span>
+
+<h3>Retail Display & Counters</h3>
+
+<p>
+Practical display areas, counters and
+customer service points for retail spaces.
+</p>
+
+</a>
+
 
 </section>
 
@@ -356,29 +496,31 @@ spaces designed around your business requirements.
 
 <section class="business">
 
-<div class="label">BUILT AROUND YOUR BUSINESS</div>
+<div class="label">
+BUILT AROUND YOUR BUSINESS
+</div>
 
 <h2>
-Practical spaces.<br>
-Professional finish.
+Not every project<br>
+needs to be big.
 </h2>
 
 <p>
-Whether you are opening a new space or improving
-an existing one, we provide the interior works
-needed to get your business space ready.
+We also handle practical small and medium
+commercial works — from improving one room
+to preparing an entire office or shop.
 </p>
 
 
 <div class="item">
 
-<span>01 / OFFICE</span>
+<span>01 / NEW SPACE</span>
 
-<h3>Better Workspaces</h3>
+<h3>Setting Up</h3>
 
 <p>
-Interior modifications and fit-out works for
-offices, workspaces and meeting areas.
+Preparing a new office, shop or commercial
+unit for your business.
 </p>
 
 </div>
@@ -386,13 +528,13 @@ offices, workspaces and meeting areas.
 
 <div class="item">
 
-<span>02 / RETAIL</span>
+<span>02 / EXISTING SPACE</span>
 
-<h3>Ready for Business</h3>
+<h3>Improving</h3>
 
 <p>
-Practical interior solutions for shops,
-retail spaces and commercial units.
+Upgrade an existing workspace without
+having to completely rebuild the interior.
 </p>
 
 </div>
@@ -400,16 +542,69 @@ retail spaces and commercial units.
 
 <div class="item">
 
-<span>03 / MODIFICATIONS</span>
+<span>03 / SMALL CHANGES</span>
 
-<h3>Upgrade Existing Spaces</h3>
+<h3>Modifying</h3>
 
 <p>
-Partitions, ceilings, flooring, painting
-and other interior improvement works.
+Add a cabin, change a counter, create a
+partition or improve selected areas.
 </p>
 
 </div>
+
+</section>
+
+
+<!-- RELATED INTERIOR SERVICES -->
+
+<section class="related">
+
+<div class="label">
+RELATED INTERIOR SERVICES
+</div>
+
+<h2>
+Everything your<br>
+space may need.
+</h2>
+
+<p>
+These works can be included depending
+on the requirements of your office or shop.
+</p>
+
+<div class="related-list">
+
+<div class="related-item">
+Partitions & Ceilings
+</div>
+
+<div class="related-item">
+Flooring Works
+</div>
+
+<div class="related-item">
+Painting & Finishing
+</div>
+
+<div class="related-item">
+Gypsum & Glass Works
+</div>
+
+<div class="related-item">
+Joinery & Carpentry
+</div>
+
+<div class="related-item">
+Interior Modifications
+</div>
+
+</div>
+
+<a href="interior-fitout.html" class="explore">
+EXPLORE INTERIOR SERVICES →
+</a>
 
 </section>
 
@@ -418,27 +613,31 @@ and other interior improvement works.
 
 <section class="cta">
 
-<div class="label">START YOUR PROJECT</div>
+<div class="label">
+START YOUR PROJECT
+</div>
 
 <h2>
-Planning an office<br>
-or shop project?
+Have a small<br>
+commercial project?
 </h2>
 
 <p>
-Tell us what your space needs.
-Our team can help with interior modifications,
-renovation and complete fit-out works.
+Tell us what you need for your office or shop.
+From one small modification to a complete fit-out,
+our team is ready to help.
 </p>
 
 <div class="buttons">
 
-<a class="btn primary"
+<a
+class="btn primary"
 href="https://wa.me/971552930619">
 WhatsApp Us
 </a>
 
-<a class="btn secondary"
+<a
+class="btn secondary"
 href="tel:+971552930619">
 Call Us
 </a>
@@ -452,7 +651,9 @@ Call Us
 
 <footer class="footer">
 
-<strong>S&S Middle East</strong>
+<strong>
+S&S Middle East
+</strong>
 
 <p>
 Technical Services LLC<br>
@@ -461,6 +662,7 @@ DIP - 1, Dubai - UAE<br>
 </p>
 
 </footer>
+
 
 </body>
 </html>
