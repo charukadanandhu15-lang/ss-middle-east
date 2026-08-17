@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Restaurant & Clinic Works | S&S Middle East</title>
+<title>Commercial Spaces | S&S Middle East</title>
 
 <style>
 *{
@@ -22,19 +22,20 @@ body{
 /* HERO */
 
 .hero{
-  min-height:82vh;
+  min-height:84vh;
   position:relative;
   display:flex;
   align-items:flex-end;
-  padding:38px 25px 50px;
+  padding:38px 25px 52px;
   color:#fff;
 
   background:
-    linear-gradient(to bottom,
-      rgba(7,20,31,.15),
+    linear-gradient(
+      to bottom,
+      rgba(7,20,31,.12),
       rgba(7,20,31,.88)
     ),
-    url("https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=900&q=88");
+    url("https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1000&q=88");
 
   background-size:cover;
   background-position:center;
@@ -52,14 +53,15 @@ body{
 
 .number{
   color:#f47721;
+  font-size:13px;
   font-weight:bold;
   letter-spacing:2px;
   margin-bottom:15px;
 }
 
 .hero h1{
-  font-size:49px;
-  line-height:.97;
+  font-size:50px;
+  line-height:.96;
   letter-spacing:-2px;
   margin-bottom:22px;
 }
@@ -71,10 +73,11 @@ body{
   max-width:520px;
 }
 
+
 /* INTRO */
 
 .intro{
-  padding:75px 25px 55px;
+  padding:75px 25px 58px;
 }
 
 .label{
@@ -98,37 +101,46 @@ body{
   line-height:1.75;
 }
 
-/* SECTION */
 
-.category{
-  padding:25px 18px 70px;
+/* VISUAL EXAMPLES */
+
+.examples{
+  padding:15px 18px 75px;
 }
 
-.category-head{
-  padding:0 7px 28px;
+.section-head{
+  padding:0 7px 30px;
 }
 
-.category-head span{
+.section-head span{
   color:#f47721;
   font-size:12px;
   font-weight:bold;
   letter-spacing:3px;
 }
 
-.category-head h2{
+.section-head h2{
   font-size:34px;
+  line-height:1.08;
   margin-top:9px;
 }
 
-/* IMAGE CARDS */
+.section-head p{
+  color:#747d83;
+  font-size:15px;
+  line-height:1.6;
+  margin-top:13px;
+}
+
+
+/* CARDS */
 
 .card{
   position:relative;
-  height:430px;
+  height:390px;
   margin-bottom:16px;
   overflow:hidden;
   color:#fff;
-  text-decoration:none;
   display:block;
   background:#102333;
 }
@@ -138,7 +150,6 @@ body{
   height:100%;
   object-fit:cover;
   display:block;
-  transition:.4s;
 }
 
 .card::after{
@@ -148,8 +159,8 @@ body{
   background:
     linear-gradient(
       to bottom,
-      rgba(7,20,31,.04) 30%,
-      rgba(7,20,31,.88) 100%
+      rgba(7,20,31,.03) 25%,
+      rgba(7,20,31,.90) 100%
     );
 }
 
@@ -171,77 +182,98 @@ body{
 }
 
 .card h3{
-  font-size:28px;
+  font-size:27px;
   margin-bottom:8px;
 }
 
 .card p{
   color:#dce1e4;
   font-size:14px;
-  line-height:1.5;
-  padding-right:25px;
+  line-height:1.55;
+  max-width:310px;
 }
 
-.arrow{
-  position:absolute;
-  right:23px;
-  bottom:26px;
-  z-index:3;
-  color:#f47721;
-  font-size:25px;
-}
 
-/* CLINIC AREA */
+/* DARK SECTION */
 
-.clinic{
-  background:#fff;
-  padding-top:65px;
-}
-
-/* SUPPORT */
-
-.support{
+.flexible{
   background:#102333;
   color:#fff;
   padding:70px 25px;
 }
 
-.support .label{
+.flexible .label{
   color:#f47721;
 }
 
-.support h2{
+.flexible h2{
   font-size:39px;
-  line-height:1.08;
-  margin-bottom:38px;
+  line-height:1.07;
+  margin-bottom:20px;
 }
 
-.support-item{
-  padding:22px 0;
+.flexible > p{
+  color:#aeb8bf;
+  font-size:17px;
+  line-height:1.65;
+  margin-bottom:40px;
+}
+
+.flex-item{
+  padding:24px 0;
   border-top:1px solid rgba(255,255,255,.17);
 }
 
-.support-item span{
+.flex-item span{
   color:#f47721;
   font-size:11px;
   letter-spacing:2px;
 }
 
-.support-item h3{
-  margin-top:8px;
-  font-size:22px;
+.flex-item h3{
+  margin:8px 0 7px;
+  font-size:23px;
 }
 
-.support-item p{
+.flex-item p{
   color:#aeb8bf;
   font-size:15px;
-  line-height:1.55;
-  margin-top:7px;
+  line-height:1.6;
 }
+
+
+/* SIMPLE STATEMENT */
+
+.statement{
+  background:#fff;
+  padding:75px 25px;
+}
+
+.statement .big{
+  font-size:39px;
+  line-height:1.08;
+  letter-spacing:-1px;
+  margin-bottom:25px;
+}
+
+.statement p{
+  color:#69727a;
+  font-size:17px;
+  line-height:1.7;
+}
+
+.statement-line{
+  width:55px;
+  height:3px;
+  background:#f47721;
+  margin-bottom:28px;
+}
+
 
 /* CTA */
 
 .cta{
+  background:#f4f2ed;
   padding:75px 25px;
 }
 
@@ -281,6 +313,7 @@ body{
   color:#102333;
 }
 
+
 /* FOOTER */
 
 .footer{
@@ -301,6 +334,9 @@ body{
   line-height:1.6;
 }
 
+
+/* SMALL MOBILE */
+
 @media(max-width:380px){
 
   .hero h1{
@@ -311,12 +347,25 @@ body{
     font-size:37px;
   }
 
+  .section-head h2{
+    font-size:31px;
+  }
+
   .card{
-    height:390px;
+    height:360px;
   }
 
   .card h3{
     font-size:25px;
+  }
+
+  .flexible h2,
+  .statement .big{
+    font-size:35px;
+  }
+
+  .cta h2{
+    font-size:37px;
   }
 
   .buttons{
@@ -331,6 +380,7 @@ body{
 </style>
 </head>
 
+
 <body>
 
 
@@ -338,22 +388,24 @@ body{
 
 <section class="hero">
 
-<a href="index.html" class="back">← BACK</a>
+<a href="index.html" class="back">
+← BACK
+</a>
 
 <div>
 
 <div class="number">
-03 / RESTAURANT & CLINIC
+03 / COMMERCIAL SPACES
 </div>
 
 <h1>
-Spaces designed<br>
-for every purpose.
+Spaces built<br>
+around business.
 </h1>
 
 <p>
-Interior fit-out solutions for restaurants,
-cafés, medical clinics and professional spaces.
+Practical fit-out and modification solutions
+for a wide range of commercial spaces.
 </p>
 
 </div>
@@ -365,299 +417,284 @@ cafés, medical clinics and professional spaces.
 
 <section class="intro">
 
-<div class="label">SPECIALIZED SPACES</div>
+<div class="label">
+COMMERCIAL PROJECTS
+</div>
 
 <h2>
-Different spaces.<br>
-One reliable team.
+Every business<br>
+uses space differently.
 </h2>
 
 <p>
-From restaurant kitchens and dining areas
-to clinic reception and consultation rooms,
-we create practical spaces around the way
-your business needs to operate.
+No two commercial spaces have exactly the
+same requirements.
+<br><br>
+We work around your available space,
+business needs and daily operations to create
+practical solutions — whether you are starting
+something new or improving what you already have.
 </p>
 
 </section>
+
+
+<!-- VISUAL EXAMPLES -->
+
+<section class="examples">
+
+<div class="section-head">
+
+<span>EXAMPLES OF SPACES</span>
+
+<h2>
+Different businesses.<br>
+Different spaces.
+</h2>
+
+<p>
+A few examples of the commercial environments
+we can work with — and not a limit on what we do.
+</p>
+
+</div>
 
 
 <!-- RESTAURANT -->
 
-<section class="category">
-
-<div class="category-head">
-
-<span>01 / HOSPITALITY</span>
-
-<h2>Restaurant Works</h2>
-
-</div>
-
-
-<a class="card" href="#">
-
-<img
-src="https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=900&q=85"
-alt="Commercial Kitchen">
-
-<div class="card-content">
-
-<span class="card-number">01</span>
-
-<h3>Commercial Kitchen</h3>
-
-<p>
-Practical kitchen layouts, interior works
-and technical requirements.
-</p>
-
-</div>
-
-<span class="arrow">→</span>
-
-</a>
-
-
-<a class="card" href="#">
+<div class="card">
 
 <img
 src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=85"
-alt="Restaurant Dining Area">
+alt="Restaurant and Hospitality Space">
 
 <div class="card-content">
 
-<span class="card-number">02</span>
+<span class="card-number">
+01 / HOSPITALITY
+</span>
 
-<h3>Dining Area</h3>
+<h3>
+Restaurant & Hospitality
+</h3>
 
 <p>
-Comfortable and functional restaurant
-interiors designed around your space.
+Practical spaces for dining,
+food service and hospitality businesses.
 </p>
 
 </div>
 
-<span class="arrow">→</span>
-
-</a>
-
-
-<a class="card" href="#">
-
-<img
-src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=900&q=85"
-alt="Kitchen Ventilation">
-
-<div class="card-content">
-
-<span class="card-number">03</span>
-
-<h3>Kitchen Ventilation</h3>
-
-<p>
-Exhaust, ducting and ventilation solutions
-for commercial kitchen requirements.
-</p>
-
 </div>
-
-<span class="arrow">→</span>
-
-</a>
-
-
-<a class="card" href="#">
-
-<img
-src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=900&q=85"
-alt="Restaurant Fit-Out">
-
-<div class="card-content">
-
-<span class="card-number">04</span>
-
-<h3>Restaurant Fit-Out</h3>
-
-<p>
-Interior modifications and fit-out works
-from preparation to final finish.
-</p>
-
-</div>
-
-<span class="arrow">→</span>
-
-</a>
-
-</section>
 
 
 <!-- CLINIC -->
 
-<section class="category clinic">
-
-<div class="category-head">
-
-<span>02 / HEALTHCARE</span>
-
-<h2>Medical Clinic Works</h2>
-
-</div>
-
-
-<a class="card" href="#">
+<div class="card">
 
 <img
 src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=900&q=85"
-alt="Clinic Reception">
+alt="Clinic and Healthcare Space">
 
 <div class="card-content">
 
-<span class="card-number">01</span>
+<span class="card-number">
+02 / HEALTHCARE
+</span>
 
-<h3>Reception & Waiting</h3>
+<h3>
+Clinic & Healthcare
+</h3>
 
 <p>
-Clean and welcoming reception and waiting
-spaces for medical clinics.
+Professional spaces designed around
+staff, visitors and daily operations.
 </p>
 
 </div>
 
-<span class="arrow">→</span>
-
-</a>
+</div>
 
 
-<a class="card" href="#">
+<!-- RETAIL -->
+
+<div class="card">
 
 <img
-src="https://images.unsplash.com/photo-1516841273335-e39b37888115?auto=format&fit=crop&w=900&q=85"
-alt="Doctor Consulting Room">
+src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=900&q=85"
+alt="Retail and Showroom Space">
 
 <div class="card-content">
 
-<span class="card-number">02</span>
+<span class="card-number">
+03 / RETAIL
+</span>
 
-<h3>Doctor Consulting Room</h3>
+<h3>
+Retail & Showroom
+</h3>
 
 <p>
-Professional consultation rooms designed
-for comfort, privacy and daily use.
+Customer-facing commercial spaces
+for products, services and sales.
 </p>
 
 </div>
 
-<span class="arrow">→</span>
-
-</a>
+</div>
 
 
-<a class="card" href="#">
+<!-- WORKSPACE -->
+
+<div class="card">
 
 <img
-src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=900&q=85"
-alt="Clinic Treatment Room">
+src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=85"
+alt="Office and Workspace">
 
 <div class="card-content">
 
-<span class="card-number">03</span>
+<span class="card-number">
+04 / WORKSPACE
+</span>
 
-<h3>Treatment Room</h3>
+<h3>
+Office & Workspace
+</h3>
 
 <p>
-Practical treatment spaces with clean
-finishes and efficient layouts.
+Functional spaces for teams,
+clients and everyday business activity.
 </p>
 
 </div>
 
-<span class="arrow">→</span>
-
-</a>
+</div>
 
 
-<a class="card" href="#">
+<!-- OTHER -->
+
+<div class="card">
 
 <img
-src="https://images.unsplash.com/photo-1538108149393-fbbd81895907?auto=format&fit=crop&w=900&q=85"
-alt="Medical Clinic Fit-Out">
+src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=900&q=85"
+alt="Other Commercial Spaces">
 
 <div class="card-content">
 
-<span class="card-number">04</span>
+<span class="card-number">
+05 / AND MORE
+</span>
 
-<h3>Clinic Interior Fit-Out</h3>
+<h3>
+Other Commercial Spaces
+</h3>
 
 <p>
-Interior modifications and fit-out solutions
-for medical and healthcare spaces.
+Have a different type of business?
+Tell us about your space and what you need.
 </p>
 
 </div>
 
-<span class="arrow">→</span>
-
-</a>
+</div>
 
 </section>
 
 
-<!-- SUPPORT -->
+<!-- FLEXIBLE PROJECTS -->
 
-<section class="support">
+<section class="flexible">
 
 <div class="label">
-COMPLETE SUPPORT
+FLEXIBLE PROJECT SCOPE
 </div>
 
 <h2>
-More than<br>
-interior finishing.
+Small change<br>
+or complete space.
 </h2>
 
+<p>
+Commercial work does not always mean
+a large project. The scope can be based
+on exactly what your business requires.
+</p>
 
-<div class="support-item">
 
-<span>01</span>
+<div class="flex-item">
 
-<h3>HVAC & Ventilation</h3>
+<span>01 / MODIFY</span>
+
+<h3>
+Small Modifications
+</h3>
 
 <p>
-Ventilation and air-conditioning works
-based on the space requirement.
+Change or improve a selected part
+of an existing commercial space.
 </p>
 
 </div>
 
 
-<div class="support-item">
+<div class="flex-item">
 
-<span>02</span>
+<span>02 / IMPROVE</span>
 
-<h3>Electrical & Plumbing</h3>
+<h3>
+Renovation & Upgrades
+</h3>
 
 <p>
-Supporting MEP modifications for
-restaurant and clinic fit-outs.
+Refresh and improve existing spaces
+with practical modifications.
 </p>
 
 </div>
 
 
-<div class="support-item">
+<div class="flex-item">
 
-<span>03</span>
+<span>03 / CREATE</span>
 
-<h3>Gypsum, Glass & Joinery</h3>
+<h3>
+New Space Setup
+</h3>
 
 <p>
-Partitions, ceilings, glass works
-and custom interior elements.
+Prepare a new commercial space
+around your business requirements.
 </p>
 
 </div>
+
+</section>
+
+
+<!-- BROAD BUSINESS MESSAGE -->
+
+<section class="statement">
+
+<div class="label">
+YOUR BUSINESS. YOUR SPACE.
+</div>
+
+<div class="statement-line"></div>
+
+<h2 class="big">
+Not on the list?<br>
+That’s okay.
+</h2>
+
+<p>
+The examples above are only a few types of
+commercial spaces.
+<br><br>
+Whatever your business, share your requirement
+with us and we can look at the space and
+the work that needs to be done.
+</p>
 
 </section>
 
@@ -671,14 +708,14 @@ START YOUR PROJECT
 </div>
 
 <h2>
-Restaurant or<br>
-clinic project?
+Have a commercial<br>
+space that needs work?
 </h2>
 
 <p>
-Share your space and requirement with us.
-We can help with interior fit-out,
-modifications and related technical works.
+Tell us about your space and what you need.
+From a small modification to a complete setup,
+our team is ready to help.
 </p>
 
 <div class="buttons">
@@ -704,7 +741,9 @@ Call Us
 
 <footer class="footer">
 
-<strong>S&S Middle East</strong>
+<strong>
+S&S Middle East
+</strong>
 
 <p>
 Technical Services LLC<br>
@@ -713,6 +752,7 @@ DIP - 1, Dubai - UAE<br>
 </p>
 
 </footer>
+
 
 </body>
 </html>
