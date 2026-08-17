@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Shop & Retail Fit-Out | S&S Middle East</title>
+
+<style>
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  background:#f4f2ed;
+  color:#102333;
+}
+
+/* HERO */
+
+.hero{
+  min-height:88vh;
+  position:relative;
+  display:flex;
+  align-items:flex-end;
+  padding:38px 28px 55px;
+  color:#fff;
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(7,20,31,.12),
+      rgba(7,20,31,.88)
+    ),
+    url("https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1000&q=88");
+
+  background-size:cover;
+  background-position:center;
+}
+
+.back{
+  position:absolute;
+  top:28px;
+  left:25px;
+  color:#fff;
+  text-decoration:none;
+  font-size:14px;
+  letter-spacing:1px;
+}
+
+.hero-content{
+  max-width:600px;
+}
+
+.number{
+  color:#f47721;
+  font-size:13px;
+  font-weight:bold;
+  letter-spacing:2px;
+  margin-bottom:15px;
+}
+
+.hero h1{
+  font-size:51px;
+  line-height:.96;
+  letter-spacing:-2px;
+  margin-bottom:22px;
+}
+
+.hero p{
+  font-size:19px;
+  line-height:1.55;
+  color:#e7e7e7;
+}
+
+
+/* INTRO */
+
+.intro{
+  padding:75px 28px 60px;
+}
+
+.label{
+  color:#c96827;
+  font-size:12px;
+  letter-spacing:4px;
+  font-weight:bold;
+  margin-bottom:24px;
+}
+
+.intro h2{
+  font-size:42px;
+  line-height:1.08;
+  letter-spacing:-1.5px;
+  margin-bottom:25px;
+}
+
+.intro p{
+  color:#69727a;
+  font-size:18px;
+  line-height:1.7;
+}
+
+
+/* RETAIL AREAS */
+
+.areas{
+  padding:10px 28px 75px;
+}
+
+.area{
+  padding:28px 0;
+  border-top:1px solid #d8d8d4;
+}
+
+.area:last-child{
+  border-bottom:1px solid #d8d8d4;
+}
+
+.area span{
+  color:#d56e28;
+  font-size:11px;
+  font-weight:bold;
+  letter-spacing:2px;
+}
+
+.area h3{
+  font-size:26px;
+  font-weight:500;
+  margin:9px 0;
+}
+
+.area p{
+  color:#747d83;
+  font-size:15px;
+  line-height:1.6;
+}
+
+
+/* DARK SECTION */
+
+.scope{
+  background:#102333;
+  color:#fff;
+  padding:70px 28px;
+}
+
+.scope .label{
+  color:#f47721;
+}
+
+.scope h2{
+  font-size:40px;
+  line-height:1.05;
+  margin-bottom:20px;
+}
+
+.scope > p{
+  color:#aeb8bf;
+  font-size:17px;
+  line-height:1.65;
+  margin-bottom:40px;
+}
+
+.scope-item{
+  padding:24px 0;
+  border-top:1px solid rgba(255,255,255,.18);
+}
+
+.scope-item span{
+  color:#f47721;
+  font-size:11px;
+  letter-spacing:2px;
+}
+
+.scope-item h3{
+  font-size:22px;
+  margin:8px 0 7px;
+}
+
+.scope-item p{
+  color:#aeb8bf;
+  font-size:15px;
+  line-height:1.6;
+}
+
+
+/* PROJECT SECTION */
+
+.project{
+  background:#fff;
+  padding:75px 28px;
+}
+
+.project h2{
+  font-size:39px;
+  line-height:1.07;
+  margin-bottom:20px;
+}
+
+.project > p{
+  color:#69727a;
+  font-size:17px;
+  line-height:1.7;
+  margin-bottom:35px;
+}
+
+.project-box{
+  padding:24px 0;
+  border-top:1px solid #d8d8d4;
+}
+
+.project-box:last-child{
+  border-bottom:1px solid #d8d8d4;
+}
+
+.project-box span{
+  color:#d56e28;
+  font-size:11px;
+  letter-spacing:2px;
+}
+
+.project-box h3{
+  font-size:23px;
+  margin:8px 0;
+}
+
+.project-box p{
+  color:#747d83;
+  font-size:15px;
+  line-height:1.6;
+}
+
+
+/* CTA */
+
+.cta{
+  background:#f4f2ed;
+  padding:75px 28px;
+}
+
+.cta h2{
+  font-size:43px;
+  line-height:1.05;
+  margin-bottom:20px;
+}
+
+.cta p{
+  color:#68727a;
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:32px;
+}
+
+.buttons{
+  display:flex;
+  gap:12px;
+}
+
+.btn{
+  display:inline-block;
+  padding:17px 22px;
+  text-decoration:none;
+  font-weight:bold;
+  font-size:15px;
+}
+
+.primary{
+  background:#f47721;
+  color:#fff;
+}
+
+.secondary{
+  border:1px solid #102333;
+  color:#102333;
+}
+
+
+/* FOOTER */
+
+.footer{
+  background:#0d1d29;
+  color:#fff;
+  padding:35px 28px;
+}
+
+.footer strong{
+  display:block;
+  font-size:20px;
+  margin-bottom:8px;
+}
+
+.footer p{
+  color:#9eabb3;
+  font-size:14px;
+  line-height:1.6;
+}
+
+
+/* SMALL MOBILE */
+
+@media(max-width:380px){
+
+  .hero h1{
+    font-size:44px;
+  }
+
+  .intro h2,
+  .cta h2{
+    font-size:37px;
+  }
+
+  .scope h2,
+  .project h2{
+    font-size:35px;
+  }
+
+  .buttons{
+    flex-direction:column;
+  }
+
+  .btn{
+    text-align:center;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+<a class="back" href="office-shop.html">
+← OFFICE & SHOP
+</a>
+
+<div class="hero-content">
+
+<div class="number">
+02 / SHOP & RETAIL FIT-OUT
+</div>
+
+<h1>
+Built to<br>
+welcome customers.
+</h1>
+
+<p>
+Practical retail fit-out solutions for shops,
+showrooms and customer-facing commercial spaces.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- INTRO -->
+
+<section class="intro">
+
+<div class="label">
+RETAIL FIT-OUT
+</div>
+
+<h2>
+Make every part<br>
+of your shop work.
+</h2>
+
+<p>
+A good retail space needs to look professional
+while remaining practical for customers and staff.
+<br><br>
+S&S Middle East provides fit-out and modification
+solutions for new shops, existing retail units
+and small to medium commercial projects.
+</p>
+
+</section>
+
+
+<!-- RETAIL AREAS -->
+
+<section class="areas">
+
+<div class="area">
+
+<span>01 / LAYOUT</span>
+
+<h3>Retail Space Planning</h3>
+
+<p>
+Practical layouts designed around customer movement,
+product displays and everyday operations.
+</p>
+
+</div>
+
+
+<div class="area">
+
+<span>02 / DISPLAY</span>
+
+<h3>Product Display Areas</h3>
+
+<p>
+Display walls, shelving areas and practical
+spaces for presenting products clearly.
+</p>
+
+</div>
+
+
+<div class="area">
+
+<span>03 / COUNTERS</span>
+
+<h3>Sales & Service Counters</h3>
+
+<p>
+Practical counters for billing, customer
+service and daily retail operations.
+</p>
+
+</div>
+
+
+<div class="area">
+
+<span>04 / STORAGE</span>
+
+<h3>Storage Solutions</h3>
+
+<p>
+Back-of-house storage, cabinets and shelving
+planned around your available space.
+</p>
+
+</div>
+
+
+<div class="area">
+
+<span>05 / CUSTOMER AREA</span>
+
+<h3>Customer-Facing Spaces</h3>
+
+<p>
+Clean and professional areas designed to
+create a better customer experience.
+</p>
+
+</div>
+
+
+<div class="area">
+
+<span>06 / RENOVATION</span>
+
+<h3>Existing Shop Upgrades</h3>
+
+<p>
+Refresh or modify selected parts of an existing
+shop without carrying out a complete new fit-out.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- WORK SCOPE -->
+
+<section class="scope">
+
+<div class="label">
+WHAT WE CAN HANDLE
+</div>
+
+<h2>
+From shell space<br>
+to ready for business.
+</h2>
+
+<p>
+Depending on your retail project,
+we can coordinate the different interior
+works required for the space.
+</p>
+
+
+<div class="scope-item">
+
+<span>01</span>
+
+<h3>Partitions & Ceilings</h3>
+
+<p>
+Internal divisions, gypsum works,
+ceiling modifications and related finishing.
+</p>
+
+</div>
+
+
+<div class="scope-item">
+
+<span>02</span>
+
+<h3>Flooring & Painting</h3>
+
+<p>
+Floor finishes, wall preparation,
+painting and final interior finishing.
+</p>
+
+</div>
+
+
+<div class="scope-item">
+
+<span>03</span>
+
+<h3>Joinery & Display Works</h3>
+
+<p>
+Counters, cabinets, shelving,
+storage and other custom woodwork.
+</p>
+
+</div>
+
+
+<div class="scope-item">
+
+<span>04</span>
+
+<h3>Lighting & Electrical</h3>
+
+<p>
+Supporting lighting, power points
+and electrical modifications for the layout.
+</p>
+
+</div>
+
+
+<div class="scope-item">
+
+<span>05</span>
+
+<h3>HVAC & MEP Coordination</h3>
+
+<p>
+Supporting AC, ventilation, plumbing
+and other MEP modifications where required.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- FLEXIBLE PROJECT -->
+
+<section class="project">
+
+<div class="label">
+FLEXIBLE PROJECT SCOPE
+</div>
+
+<h2>
+New shop or<br>
+simple upgrade.
+</h2>
+
+<p>
+The work can be planned around exactly
+what your retail space requires.
+</p>
+
+
+<div class="project-box">
+
+<span>01 / SMALL WORK</span>
+
+<h3>Selected Modifications</h3>
+
+<p>
+Change a counter, display area, ceiling,
+flooring or another selected part of the shop.
+</p>
+
+</div>
+
+
+<div class="project-box">
+
+<span>02 / RENOVATION</span>
+
+<h3>Retail Space Upgrade</h3>
+
+<p>
+Combine multiple interior improvements
+to refresh an existing shop.
+</p>
+
+</div>
+
+
+<div class="project-box">
+
+<span>03 / COMPLETE SETUP</span>
+
+<h3>Shop Fit-Out</h3>
+
+<p>
+Coordinate the required interior works
+to prepare a new retail space for business.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- CTA -->
+
+<section class="cta">
+
+<div class="label">
+START YOUR PROJECT
+</div>
+
+<h2>
+Opening or<br>
+upgrading a shop?
+</h2>
+
+<p>
+Tell us about your retail space and what you need.
+From a small modification to a complete shop fit-out,
+our team is ready to help.
+</p>
+
+<div class="buttons">
+
+<a class="btn primary"
+href="https://wa.me/971552930619">
+WhatsApp Us
+</a>
+
+<a class="btn secondary"
+href="tel:+971552930619">
+Call Us
+</a>
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+<strong>S&S Middle East</strong>
+
+<p>
+Technical Services LLC<br>
+DIP - 1, Dubai - UAE<br>
++971 55 293 0619
+</p>
+
+</footer>
+
+</body>
+</html>
