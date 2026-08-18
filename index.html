@@ -1,14 +1,20 @@
+
 <!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 
 <title>S&S Middle East | Interior Fit-Out & Technical Services</title>
 
+<meta name="description"
+content="Interior fit-out, renovation, HVAC, MEP and maintenance solutions in Dubai, UAE.">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Manrope:wght@400;500;600;700;800&display=swap"
+rel="stylesheet">
 
 <link rel="stylesheet" href="style.css">
 </head>
@@ -16,35 +22,36 @@
 <body>
 
 
-<!-- HEADER -->
+<!-- =========================
+HEADER
+========================= -->
 
-<header class="header">
+<header class="header" id="header">
 
   <a class="brand" href="index.html">
 
     <span class="mark">S&S</span>
 
-    <span>
+    <span class="brand-name">
       MIDDLE EAST
       <small>TECHNICAL SERVICES LLC</small>
     </span>
 
   </a>
 
-
-  <button class="menu" id="menuBtn" aria-label="Open menu">
-    ☰
+  <button
+    class="menu"
+    id="menuBtn"
+    aria-label="Open menu"
+    aria-expanded="false">
+    <span></span>
+    <span></span>
   </button>
 
-
   <nav id="mainNav">
-
     <a href="#spaces">Spaces</a>
-
     <a href="#services">Services</a>
-
     <a href="#contact">Contact</a>
-
   </nav>
 
 </header>
@@ -54,60 +61,96 @@
 <main>
 
 
-<!-- ================================= -->
-<!-- HERO -->
-<!-- ================================= -->
+<!-- =========================
+HERO
+========================= -->
 
 <section class="hero">
 
   <div class="hero-bg"></div>
+  <div class="hero-shade"></div>
 
   <div class="hero-content">
 
-    <p class="eyebrow">
-      DUBAI • UAE
+    <p class="eyebrow light">
+      INTERIOR FIT-OUT • DUBAI
     </p>
 
     <h1>
-      Your Space.<br>
-      <span>Our Expertise.</span>
+      We design.<br>
+      We build.<br>
+      <em>We complete.</em>
     </h1>
 
     <p class="hero-text">
-      Interior fit-out, renovation and technical
-      services — built around what your space
-      actually needs.
+      Interior fit-out solutions that transform
+      spaces — supported by HVAC, MEP and
+      maintenance expertise.
     </p>
-
 
     <div class="actions">
 
       <a class="primary"
-         href="https://wa.me/971552930619?text=Hello%20S%26S%20Middle%20East%2C%20I%20would%20like%20to%20discuss%20a%20project.">
-        Discuss Your Space
+         href="https://wa.me/971552930619?text=Hello%20S%26S%20Middle%20East%2C%20I%20would%20like%20to%20discuss%20an%20interior%20fit-out%20project.">
+        Discuss Your Project
+        <span>→</span>
       </a>
 
-      <a class="ghost"
-         href="#spaces">
-        Explore ↓
+      <a class="hero-explore" href="#spaces">
+        Explore
+        <span>↓</span>
       </a>
 
     </div>
 
   </div>
 
+  <div class="hero-bottom">
 
-  <div class="scroll-note">
-    SCROLL TO EXPLORE
+    <span>FIT-OUT</span>
+    <i></i>
+    <span>HVAC</span>
+    <i></i>
+    <span>MEP</span>
+    <i></i>
+    <span>MAINTENANCE</span>
+
   </div>
 
 </section>
 
 
 
-<!-- ================================= -->
-<!-- CHOOSE YOUR SPACE -->
-<!-- ================================= -->
+<!-- =========================
+INTRO
+========================= -->
+
+<section class="brand-intro">
+
+  <p class="eyebrow dark">
+    FROM IDEA TO FINISH
+  </p>
+
+  <h2>
+    More than<br>
+    a finished space.
+  </h2>
+
+  <div class="intro-line"></div>
+
+  <p class="intro-copy">
+    We bring together interior fit-out,
+    technical services and finishing to create
+    spaces that look right and work properly.
+  </p>
+
+</section>
+
+
+
+<!-- =========================
+CHOOSE YOUR SPACE
+========================= -->
 
 <section class="space-section" id="spaces">
 
@@ -123,8 +166,8 @@
     </h2>
 
     <p>
-      Choose a space to see the type of work
-      we can help you with.
+      Choose the type of space. We'll show you
+      how S&S can help bring it together.
     </p>
 
   </div>
@@ -132,46 +175,36 @@
 
   <div class="space-tabs">
 
-    <button class="space-tab active"
-            data-space="home">
+    <button class="space-tab active" data-space="home">
       Home
     </button>
 
-    <button class="space-tab"
-            data-space="office">
+    <button class="space-tab" data-space="office">
       Office
     </button>
 
-    <button class="space-tab"
-            data-space="shop">
+    <button class="space-tab" data-space="shop">
       Shop
     </button>
 
-    <button class="space-tab"
-            data-space="restaurant">
+    <button class="space-tab" data-space="restaurant">
       Restaurant
     </button>
 
-    <button class="space-tab"
-            data-space="clinic">
+    <button class="space-tab" data-space="clinic">
       Clinic
     </button>
 
-    <button class="space-tab"
-            data-space="other">
+    <button class="space-tab" data-space="other">
       Other
     </button>
 
   </div>
 
 
-
-  <!-- INTERACTIVE SPACE DISPLAY -->
-
   <div class="space-display" id="spaceDisplay">
 
     <div class="space-overlay"></div>
-
 
     <div class="space-info">
 
@@ -189,9 +222,7 @@
         AC works and everyday maintenance.
       </p>
 
-
-      <div class="space-services"
-           id="spaceServices">
+      <div class="space-services" id="spaceServices">
 
         <span>Interior Fit-Out</span>
         <span>HVAC</span>
@@ -209,27 +240,27 @@
 
 
 
-<!-- ================================= -->
-<!-- ONE SPACE / MANY SERVICES -->
-<!-- ================================= -->
+<!-- =========================
+FIT-OUT EXPERIENCE
+========================= -->
 
 <section class="inside-space">
 
   <div class="inside-head">
 
-    <p class="eyebrow">
-      ONE SPACE • MANY SERVICES
+    <p class="eyebrow warm">
+      ONE SPACE • ONE TEAM
     </p>
 
     <h2>
-      We look beyond<br>
-      the surface.
+      Every detail<br>
+      comes together.
     </h2>
 
     <p>
-      A space is more than walls and furniture.
-      Fit-out, cooling, power, plumbing and finishing
-      all need to work together.
+      A successful fit-out is not only about
+      what you see. The details behind the finish
+      matter too.
     </p>
 
   </div>
@@ -237,65 +268,48 @@
 
   <div class="hotspot-visual">
 
-
-    <!-- HOTSPOT 1 -->
-
-    <button class="hotspot hotspot-one"
-            data-title="Interior Fit-Out"
-            data-text="Partitions, ceilings, flooring, joinery and interior modifications.">
-
+    <button
+      class="hotspot hotspot-one"
+      data-title="Interior Fit-Out"
+      data-text="Partitions, ceilings, flooring, joinery and interior modifications.">
       <span>+</span>
+    </button>
 
+    <button
+      class="hotspot hotspot-two"
+      data-title="HVAC & Ventilation"
+      data-text="Cooling, ducting and ventilation integrated around the interior.">
+      <span>+</span>
+    </button>
+
+    <button
+      class="hotspot hotspot-three"
+      data-title="Electrical & Lighting"
+      data-text="Lighting, power points and electrical modifications planned with the space.">
+      <span>+</span>
+    </button>
+
+    <button
+      class="hotspot hotspot-four"
+      data-title="Finishing & Maintenance"
+      data-text="Finishing, adjustments and ongoing support when the space needs attention.">
+      <span>+</span>
     </button>
 
 
-    <!-- HOTSPOT 2 -->
+    <div class="hotspot-card" id="hotspotCard">
 
-    <button class="hotspot hotspot-two"
-            data-title="HVAC & Ventilation"
-            data-text="AC, ducting, exhaust and ventilation solutions for your space.">
-
-      <span>+</span>
-
-    </button>
-
-
-    <!-- HOTSPOT 3 -->
-
-    <button class="hotspot hotspot-three"
-            data-title="Electrical & Lighting"
-            data-text="Power points, lighting and electrical modifications.">
-
-      <span>+</span>
-
-    </button>
-
-
-    <!-- HOTSPOT 4 -->
-
-    <button class="hotspot hotspot-four"
-            data-title="Maintenance"
-            data-text="Repairs, touch-ups and practical everyday technical support.">
-
-      <span>+</span>
-
-    </button>
-
-
-    <div class="hotspot-card"
-         id="hotspotCard">
-
-      <span>
-        TAP THE + POINTS
+      <span class="hotspot-label">
+        TAP A + POINT
       </span>
 
       <h3 id="hotspotTitle">
-        Explore the space
+        Explore the details
       </h3>
 
       <p id="hotspotText">
-        See how different S&S services come
-        together inside one project.
+        See how different parts of the project
+        come together inside one space.
       </p>
 
     </div>
@@ -306,135 +320,251 @@
 
 
 
-<!-- ================================= -->
-<!-- SERVICES - COMPACT NAVIGATOR -->
-<!-- ================================= -->
+<!-- =========================
+VISUAL SERVICE CARDS
+========================= -->
 
-<section class="service-nav"
-         id="services">
+<section class="services-section" id="services">
 
-  <div class="service-heading">
+  <div class="services-head">
 
     <p class="eyebrow dark">
-      WHAT WE DO
+      OUR EXPERTISE
     </p>
 
     <h2>
-      One team.<br>
-      Multiple solutions.
+      Everything your<br>
+      space needs.
     </h2>
+
+    <p>
+      Explore each service to see what
+      S&S Middle East can do for your project.
+    </p>
 
   </div>
 
 
 
-  <a href="interior-fitout.html"
-     class="service-link">
+  <!-- 01 -->
 
-    <span>01</span>
+  <a class="service-card fitout-card"
+     href="interior-fitout.html">
 
-    <div>
-      <h3>Interior Fit-Out</h3>
-      <p>Interior works & modifications</p>
+    <div class="service-card-shade"></div>
+
+    <div class="service-card-content">
+
+      <span>01 / MAIN SERVICE</span>
+
+      <h3>
+        Interior<br>
+        Fit-Out
+      </h3>
+
+      <p>
+        From interior modifications to complete
+        fit-out and finishing.
+      </p>
+
+      <b>
+        Explore Service
+        <i>→</i>
+      </b>
+
     </div>
-
-    <b>→</b>
 
   </a>
 
 
 
-  <a href="office-shop.html"
-     class="service-link">
+  <!-- 02 -->
 
-    <span>02</span>
+  <a class="service-card office-card"
+     href="office-shop.html">
 
-    <div>
-      <h3>Office & Shop Works</h3>
-      <p>Practical business-space improvements</p>
+    <div class="service-card-shade"></div>
+
+    <div class="service-card-content">
+
+      <span>02 / BUSINESS SPACES</span>
+
+      <h3>
+        Office &<br>
+        Shop Works
+      </h3>
+
+      <p>
+        Practical interior solutions for
+        offices, shops and workspaces.
+      </p>
+
+      <b>
+        Explore Service
+        <i>→</i>
+      </b>
+
     </div>
-
-    <b>→</b>
 
   </a>
 
 
 
-  <a href="restaurant-clinic.html"
-     class="service-link">
+  <!-- 03 -->
 
-    <span>03</span>
+  <a class="service-card commercial-card"
+     href="restaurant-clinic.html">
 
-    <div>
-      <h3>Commercial Spaces</h3>
-      <p>Solutions for different businesses</p>
+    <div class="service-card-shade"></div>
+
+    <div class="service-card-content">
+
+      <span>03 / COMMERCIAL</span>
+
+      <h3>
+        Commercial<br>
+        Spaces
+      </h3>
+
+      <p>
+        Fit-out solutions for restaurants,
+        clinics, retail and other businesses.
+      </p>
+
+      <b>
+        Explore Service
+        <i>→</i>
+      </b>
+
     </div>
-
-    <b>→</b>
 
   </a>
 
 
 
-  <a href="hvac.html"
-     class="service-link">
+  <!-- 04 -->
 
-    <span>04</span>
+  <a class="service-card hvac-card"
+     href="hvac.html">
 
-    <div>
-      <h3>HVAC & Ventilation</h3>
-      <p>AC, ducting, exhaust & airflow</p>
+    <div class="service-card-shade"></div>
+
+    <div class="service-card-content">
+
+      <span>04 / CLIMATE</span>
+
+      <h3>
+        HVAC &<br>
+        Ventilation
+      </h3>
+
+      <p>
+        AC installation, maintenance,
+        ducting, exhaust and ventilation.
+      </p>
+
+      <b>
+        Explore Service
+        <i>→</i>
+      </b>
+
     </div>
-
-    <b>→</b>
 
   </a>
 
 
 
-  <a href="mep.html"
-     class="service-link">
+  <!-- 05 -->
 
-    <span>05</span>
+  <a class="service-card mep-card"
+     href="mep.html">
 
-    <div>
-      <h3>Electrical & Plumbing</h3>
-      <p>MEP installation & modifications</p>
+    <div class="service-card-shade"></div>
+
+    <div class="service-card-content">
+
+      <span>05 / MEP</span>
+
+      <h3>
+        Electrical &<br>
+        Plumbing
+      </h3>
+
+      <p>
+        Essential MEP installations,
+        modifications and repairs.
+      </p>
+
+      <b>
+        Explore Service
+        <i>→</i>
+      </b>
+
     </div>
-
-    <b>→</b>
 
   </a>
 
 
 
-  <a href="maintenance.html"
-     class="service-link">
+  <!-- 06 -->
 
-    <span>06</span>
+  <a class="service-card maintenance-card"
+     href="maintenance.html">
 
-    <div>
-      <h3>Maintenance & Repair</h3>
-      <p>Small repairs & everyday support</p>
+    <div class="service-card-shade"></div>
+
+    <div class="service-card-content">
+
+      <span>06 / SUPPORT</span>
+
+      <h3>
+        Maintenance &<br>
+        Repair
+      </h3>
+
+      <p>
+        Practical support for repairs,
+        improvements and everyday works.
+      </p>
+
+      <b>
+        Explore Service
+        <i>→</i>
+      </b>
+
     </div>
-
-    <b>→</b>
 
   </a>
 
 
 
-  <a href="vastu.html"
-     class="service-link">
+  <!-- 07 -->
 
-    <span>07</span>
+  <a class="service-card vastu-card"
+     href="vastu.html">
 
-    <div>
-      <h3>Vastu Consulting</h3>
-      <p>Optional — available on request</p>
+    <div class="service-card-shade"></div>
+
+    <div class="service-card-content">
+
+      <span>07 / OPTIONAL</span>
+
+      <h3>
+        Vastu<br>
+        Consulting
+      </h3>
+
+      <p>
+        Optional Vastu guidance available
+        for clients who request it.
+      </p>
+
+      <b>
+        Explore Service
+        <i>→</i>
+      </b>
+
     </div>
-
-    <b>→</b>
 
   </a>
 
@@ -442,52 +572,79 @@
 
 
 
-<!-- ================================= -->
-<!-- TRANSFORMATION -->
-<!-- ================================= -->
+<!-- =========================
+PROCESS
+========================= -->
 
-<section class="transformation">
+<section class="process-section">
 
-  <div class="transformation-image">
+  <p class="eyebrow warm">
+    HOW WE WORK
+  </p>
 
-    <div class="transformation-overlay"></div>
-
-
-    <div class="transformation-content">
-
-      <p class="eyebrow">
-        FROM REQUIREMENT TO REALITY
-      </p>
-
-      <h2>
-        Change the space.<br>
-        Not the headache.
-      </h2>
-
-      <p>
-        From one small modification to a complete
-        interior setup, we coordinate the work
-        around your actual requirement.
-      </p>
+  <h2>
+    From requirement<br>
+    to reality.
+  </h2>
 
 
-      <div class="flow">
+  <div class="process-list">
 
-        <div>
-          <span>01</span>
-          <strong>Understand</strong>
-        </div>
+    <div class="process-item">
 
-        <div>
-          <span>02</span>
-          <strong>Plan</strong>
-        </div>
+      <span>01</span>
 
-        <div>
-          <span>03</span>
-          <strong>Execute</strong>
-        </div>
+      <div>
+        <h3>Understand</h3>
+        <p>
+          Tell us about your space,
+          requirement and what needs to change.
+        </p>
+      </div>
 
+    </div>
+
+
+    <div class="process-item">
+
+      <span>02</span>
+
+      <div>
+        <h3>Plan</h3>
+        <p>
+          We look at the work and plan a
+          practical solution around your space.
+        </p>
+      </div>
+
+    </div>
+
+
+    <div class="process-item">
+
+      <span>03</span>
+
+      <div>
+        <h3>Execute</h3>
+        <p>
+          Our team coordinates the required
+          work from execution through finishing.
+        </p>
+      </div>
+
+    </div>
+
+
+    <div class="process-item">
+
+      <span>04</span>
+
+      <div>
+        <h3>Complete</h3>
+        <p>
+          The details are checked and the
+          completed space is ready for use.
+        </p>
       </div>
 
     </div>
@@ -498,44 +655,47 @@
 
 
 
-<!-- ================================= -->
-<!-- QUICK ENQUIRY -->
-<!-- ================================= -->
+<!-- =========================
+QUICK ENQUIRY
+========================= -->
 
-<section class="quick-enquiry"
-         id="contact">
+<section class="quick-enquiry" id="contact">
 
   <p class="eyebrow dark">
-    NOT SURE WHICH SERVICE?
+    START YOUR PROJECT
   </p>
 
   <h2>
-    Just tell us<br>
-    what you need.
+    What does your<br>
+    space need?
   </h2>
 
   <p class="quick-lead">
-    Select the closest option and start
-    a WhatsApp conversation with us.
+    Choose the closest option. We'll prepare
+    your WhatsApp enquiry automatically.
   </p>
 
 
   <div class="enquiry-options">
 
     <button data-enquiry="Interior Fit-Out">
-      Fit-Out
+      Interior Fit-Out
+    </button>
+
+    <button data-enquiry="Office or Shop Fit-Out">
+      Office / Shop
+    </button>
+
+    <button data-enquiry="Commercial Space Fit-Out">
+      Commercial
     </button>
 
     <button data-enquiry="AC / HVAC Work">
       AC / HVAC
     </button>
 
-    <button data-enquiry="Electrical Work">
-      Electrical
-    </button>
-
-    <button data-enquiry="Plumbing Work">
-      Plumbing
+    <button data-enquiry="Electrical or Plumbing Work">
+      Electrical / Plumbing
     </button>
 
     <button data-enquiry="Maintenance / Repair">
@@ -553,7 +713,8 @@
      id="whatsappMain"
      href="https://wa.me/971552930619?text=Hello%20S%26S%20Middle%20East%2C%20I%20would%20like%20to%20discuss%20my%20project.">
 
-    Discuss on WhatsApp →
+    Discuss Your Project
+    <span>→</span>
 
   </a>
 
@@ -569,24 +730,34 @@
 
 
 
-<!-- ================================= -->
-<!-- FOOTER -->
-<!-- ================================= -->
+<!-- =========================
+FOOTER
+========================= -->
 
 <footer class="new-footer">
 
-  <div>
+  <div class="footer-brand">
 
-    <strong>
-      S&S Middle East
-    </strong>
-
-    <span>
-      Technical Services LLC
+    <span class="footer-mark">
+      S&S
     </span>
+
+    <div>
+      <strong>
+        MIDDLE EAST
+      </strong>
+
+      <span>
+        TECHNICAL SERVICES LLC
+      </span>
+    </div>
 
   </div>
 
+
+  <p>
+    Interior Fit-Out & Technical Services
+  </p>
 
   <p>
     DIP - 1, Dubai - UAE
@@ -614,14 +785,16 @@
 
 
 
-<!-- ================================= -->
-<!-- STICKY MOBILE WHATSAPP -->
-<!-- ================================= -->
+<!-- =========================
+STICKY CTA
+========================= -->
 
 <a class="sticky-whatsapp"
+   id="stickyWhatsapp"
    href="https://wa.me/971552930619?text=Hello%20S%26S%20Middle%20East%2C%20I%20would%20like%20to%20discuss%20a%20project.">
 
-  Discuss Your Space →
+  Discuss Your Project
+  <span>→</span>
 
 </a>
 
@@ -630,34 +803,64 @@
 <script>
 
 /* =========================
-   MOBILE MENU
+MOBILE MENU
 ========================= */
 
-const menuBtn = document.getElementById("menuBtn");
-const mainNav = document.getElementById("mainNav");
+const menuBtn =
+  document.getElementById("menuBtn");
+
+const mainNav =
+  document.getElementById("mainNav");
+
 
 menuBtn.addEventListener("click", () => {
+
   mainNav.classList.toggle("open");
+
+  menuBtn.classList.toggle("active");
+
+  menuBtn.setAttribute(
+    "aria-expanded",
+    mainNav.classList.contains("open")
+  );
+
 });
 
+
 mainNav.querySelectorAll("a").forEach(link => {
+
   link.addEventListener("click", () => {
+
     mainNav.classList.remove("open");
+
+    menuBtn.classList.remove("active");
+
+    menuBtn.setAttribute(
+      "aria-expanded",
+      "false"
+    );
+
   });
+
 });
+
 
 
 /* =========================
-   CHOOSE YOUR SPACE
+CHOOSE YOUR SPACE
 ========================= */
 
 const spaces = {
 
   home:{
+
     number:"01 / HOME & VILLA",
-    title:"Make your home<br>work better for you.",
+
+    title:
+      "Make your home<br>work better for you.",
+
     description:
-      "Interior upgrades, electrical, plumbing, AC works and everyday maintenance.",
+      "Interior upgrades, AC, electrical, plumbing and maintenance solutions.",
 
     services:[
       "Interior Fit-Out",
@@ -673,10 +876,14 @@ const spaces = {
 
 
   office:{
+
     number:"02 / OFFICE",
-    title:"A better space<br>to work.",
+
+    title:
+      "A better space<br>to work.",
+
     description:
-      "Fit-out and technical solutions for offices, workspaces and meeting areas.",
+      "Interior fit-out and technical solutions for offices, meeting rooms and workspaces.",
 
     services:[
       "Office Fit-Out",
@@ -692,10 +899,14 @@ const spaces = {
 
 
   shop:{
+
     number:"03 / SHOP & RETAIL",
-    title:"Get your space<br>ready for business.",
+
+    title:
+      "Ready for<br>business.",
+
     description:
-      "Practical interior and technical works for shops, retail and customer-facing spaces.",
+      "Interior fit-out and supporting technical works for shops and retail spaces.",
 
     services:[
       "Shop Fit-Out",
@@ -711,8 +922,12 @@ const spaces = {
 
 
   restaurant:{
+
     number:"04 / RESTAURANT",
-    title:"Built around<br>how you operate.",
+
+    title:
+      "Built around<br>how you operate.",
+
     description:
       "Interior, kitchen-support, ventilation and MEP solutions for hospitality spaces.",
 
@@ -730,8 +945,12 @@ const spaces = {
 
 
   clinic:{
+
     number:"05 / CLINIC",
-    title:"Clean. Practical.<br>Professional.",
+
+    title:
+      "Clean. Practical.<br>Professional.",
+
     description:
       "Fit-out and technical support for reception, consultation and treatment spaces.",
 
@@ -749,10 +968,14 @@ const spaces = {
 
 
   other:{
+
     number:"06 / OTHER SPACE",
-    title:"Something<br>different?",
+
+    title:
+      "Something<br>different?",
+
     description:
-      "Tell us about your business or property and the work your space requires.",
+      "Tell us about your property or business and the work your space requires.",
 
     services:[
       "Fit-Out",
@@ -767,6 +990,7 @@ const spaces = {
   }
 
 };
+
 
 
 const tabs =
@@ -788,6 +1012,44 @@ const spaceServices =
   document.getElementById("spaceServices");
 
 
+
+function changeSpace(key){
+
+  const selected =
+    spaces[key];
+
+  display.classList.add("changing");
+
+
+  setTimeout(() => {
+
+    display.style.backgroundImage =
+      `url('${selected.image}')`;
+
+    spaceNumber.innerHTML =
+      selected.number;
+
+    spaceTitle.innerHTML =
+      selected.title;
+
+    spaceDescription.innerHTML =
+      selected.description;
+
+    spaceServices.innerHTML =
+      selected.services
+        .map(service =>
+          `<span>${service}</span>`
+        )
+        .join("");
+
+    display.classList.remove("changing");
+
+  },150);
+
+}
+
+
+
 tabs.forEach(tab => {
 
   tab.addEventListener("click", () => {
@@ -798,40 +1060,14 @@ tabs.forEach(tab => {
 
     tab.classList.add("active");
 
-
-    const selected =
-      spaces[tab.dataset.space];
-
-
-    display.style.backgroundImage =
-      `url('${selected.image}')`;
-
-
-    spaceNumber.innerHTML =
-      selected.number;
-
-
-    spaceTitle.innerHTML =
-      selected.title;
-
-
-    spaceDescription.innerHTML =
-      selected.description;
-
-
-    spaceServices.innerHTML =
-      selected.services
-        .map(service =>
-          `<span>${service}</span>`
-        )
-        .join("");
+    changeSpace(
+      tab.dataset.space
+    );
 
   });
 
 });
 
-
-/* DEFAULT SPACE IMAGE */
 
 display.style.backgroundImage =
   `url('${spaces.home.image}')`;
@@ -839,7 +1075,7 @@ display.style.backgroundImage =
 
 
 /* =========================
-   HOTSPOTS
+HOTSPOTS
 ========================= */
 
 const hotspots =
@@ -862,10 +1098,8 @@ hotspots.forEach(point => {
 
     point.classList.add("active");
 
-
     hotspotTitle.textContent =
       point.dataset.title;
-
 
     hotspotText.textContent =
       point.dataset.text;
@@ -875,8 +1109,9 @@ hotspots.forEach(point => {
 });
 
 
+
 /* =========================
-   QUICK WHATSAPP ENQUIRY
+QUICK WHATSAPP ENQUIRY
 ========================= */
 
 const enquiryButtons =
@@ -914,12 +1149,51 @@ enquiryButtons.forEach(button => {
       encodeURIComponent(message);
 
 
-    whatsappMain.textContent =
-      "Discuss " + requirement + " →";
+    whatsappMain.innerHTML =
+      `Discuss ${requirement} <span>→</span>`;
 
   });
 
 });
+
+
+
+/* =========================
+STICKY CTA
+Only show after hero
+========================= */
+
+const stickyWhatsapp =
+  document.getElementById(
+    "stickyWhatsapp"
+  );
+
+const hero =
+  document.querySelector(".hero");
+
+
+function updateStickyCTA(){
+
+  if(
+    window.scrollY >
+    hero.offsetHeight * 0.72
+  ){
+    stickyWhatsapp.classList.add("show");
+  }
+  else{
+    stickyWhatsapp.classList.remove("show");
+  }
+
+}
+
+
+window.addEventListener(
+  "scroll",
+  updateStickyCTA,
+  {passive:true}
+);
+
+updateStickyCTA();
 
 </script>
 
