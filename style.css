@@ -49,3 +49,78 @@ body{background:#e8efeb}
 @media(min-width:760px){
   .compact-hero .herocopy,.compact-about{max-width:620px;margin-left:auto;margin-right:auto}
 }
+/* VASTU CONSULTING CARD */
+
+.vastu{
+  display:block;
+  background:#f5e7d6;
+  overflow:hidden;
+}
+
+.vastu-image{
+  width:100%;
+  height:330px;
+  overflow:hidden;
+}
+
+.vastu-image img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+
+.vastu-content{
+  position:relative;
+  padding:28px 28px 32px;
+  background:#fffaf3;
+}
+
+.vastu-content small{
+  display:block;
+  margin-bottom:16px;
+  font-size:10px;
+  font-weight:700;
+  letter-spacing:.08em;
+  color:#d66b49;
+}
+
+.vastu-content h3{
+  margin:0 0 16px;
+  font-family:Georgia,serif;
+  font-size:43px;
+  line-height:.94;
+  font-weight:400;
+  color:#164f51;
+}
+
+.vastu-content p{
+  max-width:440px;
+  margin:0 0 22px;
+  font-size:14px;
+  line-height:1.55;
+  color:#526b67;
+}
+
+.vastu-points{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  padding-right:45px;
+}
+
+.vastu-points span{
+  padding:8px 10px;
+  border:1px solid rgba(22,79,81,.18);
+  font-size:9px;
+  letter-spacing:.04em;
+  color:#164f51;
+}
+
+.vastu-content>b{
+  position:absolute;
+  right:25px;
+  bottom:29px;
+  font-size:16px;
+  color:#164f51;
+}
